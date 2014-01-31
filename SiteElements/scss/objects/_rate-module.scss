@@ -1,0 +1,405 @@
+
+/* $Rate-Module
+================================================== */
+
+//Changed By Zengenti
+//CODE FROM BVA NO LONGERE NEEDED AS WE ARE USING STANDARD FEEDBACK CONTROL
+/*
+.rate-section {
+	background: #fff;
+	margin-bottom: 1px;
+	padding: 17px 20px;
+	overflow: hidden;
+}
+
+.rate-section > div {
+	float: left;
+	margin-right: 20px;
+}
+
+.feedback-section {
+	background: #fff;
+	overflow: hidden;
+	padding: 20px 0;
+}*/
+
+//Simple Theme For Comments
+/* Commenting Screen */
+
+    .sys_theme-simple .sys_comments-control {
+    width:100%;
+    clear:both;}
+
+        .sys_theme-simple .sys_comments-control .sys_comments-title {
+        font-size:1.3em;
+        font-weight:700;
+        margin:0 0 10px 0;}
+
+        .sys_theme-simple .sys_comments-control .sys_comments-signin-text {
+        font-size:1.4em;
+        color:#666;}
+
+
+        .sys_theme-simple .sys_comments-control ul {
+        margin:0 0 20px 0;
+        padding:0;
+        list-style-type:none;}
+
+            .sys_theme-simple .sys_comments-control ul li.sys_comment {
+            clear:both;
+            font-size:1.2em;
+            color:#47472e;
+            background: url("Imgs/CommentBg1.gif") 0 0 no-repeat;
+            margin:0 0 5px 0;
+            padding:0 0 0 75px;
+            position:relative;
+            border:0 none;}
+
+            .sys_theme-simple .sys_comments-control ul li, .sys_theme-simple .sys_comments-control ul li.sys_comment-declined {
+            color:#a1a18c;}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-inner {
+                width:100%;
+                padding:3px 0 0 0;
+                background:#ffffcc url("Imgs/CommentBg3.gif") 0 0 repeat-x;
+                }
+                    .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-inner:after {
+                    content: ".";
+                    display: block;
+                    height: 0;
+                    clear: both;
+                    visibility: hidden;}
+                .sys_theme-simple .sys_comments-control ul li.sys_comment a {
+                color:#0066CC;
+                text-decoration:underline;}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-userprofile {
+                position:absolute;
+                top:7px;
+                left:5px;
+                width:50px;
+                }
+                    .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-userprofile .sys_comment-profileimage {
+                    text-align:center;}
+                        .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-userprofile .sys_comment-profileimage img {
+                        margin:0 auto;}
+
+                    .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-userprofile .sys_comment-commenttype {
+                    display:none;
+                    position:absolute;
+                    top:-5px;
+                    right:-7px;
+                    width:50px;
+                    height:18px;
+                    overflow:hidden;
+                    text-indent:999px;}
+
+                    .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-userprofile .sys_comment-commenttype.sys_type-external {
+                    background:url("#{$assetspath}/Imgs/OriginWebsiteUser.png") 0 0 no-repeat;}
+
+                    .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-userprofile .sys_comment-commenttype.sys_type-editorial {
+                    background:url("#{$assetspath}/Imgs/OriginCMSUser.png") 0 0 no-repeat;}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment span.sys_comment-number {
+                color:#797953;
+                font-size:.7em;
+                display:block;
+                float:left;
+                padding:0 0 0 13px;}
+
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment cite {
+                display:block;
+                color:#797953;
+                font-size:.7em;
+                margin:0 0 5px 0;
+                padding:0;
+                font-style:normal;}
+                    .sys_theme-simple .sys_comments-control ul li.sys_comment cite a {color:#797953;}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comment-status {
+                color:#c01a0f;
+                font-size:.7em;
+                font-weight:400;
+                margin:.5em 0 0 0;
+                padding:0 0 0 12px;
+                line-height:1em;
+                background:url("#{$assetspath}/Img/Icon_StatusAlert.gif") 3px 0 no-repeat;}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment-awaitingapproval .sys_comment-status {
+                color:#336699;
+                background:url("#{$assetspath}/Img/Icon_StatusAlert2.gif") 3px 0 no-repeat;}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comments-text {
+                margin:.4em 0 0 0;
+                padding:0 15px 25px 15px;
+                background:url("#{$assetspath}/Img/CommentBg2.gif") 100% 100% repeat-x;}
+                    .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comments-text p {
+                    margin:0;
+                    padding:0;}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comments-stars {position:absolute;top:10px;right:10px;width:76px;height:15px;background-repeat:no-repeat;overflow:hidden;text-indent:-999px;}
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comments-stars.sys_comments-stars5 {background-image:url("Imgs/Stars-Rating-5.gif");}
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comments-stars.sys_comments-stars4 {background-image:url("Imgs/Stars-Rating-4.gif");}
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comments-stars.sys_comments-stars3 {background-image:url("Imgs/Stars-Rating-3.gif");}
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comments-stars.sys_comments-stars2 {background-image:url("Imgs/Stars-Rating-2.gif");}
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_comments-stars.sys_comments-stars1 {background-image:url("Imgs/Stars-Rating-1.gif");}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment cite span {
+                color:#585838;
+                font-weight:700;}
+
+                .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_toolbar {
+                position:absolute;
+                top:5px;
+                right:5px;
+                width:110px;
+                font-size:.8em;}
+
+                    .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_toolbar .sys_toolbutton {
+                    float:left;
+                    width:23px;
+                    height:22px;
+                    cursor:pointer;}
+
+                        .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_toolbar .sys_toolbutton a {
+                        display:block;
+                        width:20px;
+                        height:20px;
+                        overflow:hidden;
+                        text-indent:9999px;
+                        border:1px solid #f5de9e;
+                        margin:0;
+                        padding:0;}
+
+                        .sys_theme-simple .sys_comments-control ul li.sys_comment .sys_toolbar .sys_toolbutton a:hover {
+                        border-top-color:#eeee67;
+                        border-right-color:#acac46;
+                        border-bottom-color:#6a6a3a;
+                        background-color:#ffffa0;}
+
+                        .sys_theme-simple ul li.sys_comment .sys_comments-reportlink {
+                        font-size:10px;
+                        position:absolute;
+                        width:100px;
+                        bottom:5px;
+                        right:12px;
+                        text-align:right;}
+                            .sys_theme-simple ul li.sys_comment .sys_comments-reportlink a {color:#a95001;}
+
+
+
+            .sys_theme-simple .sys_comments-control .sys_add-your-comment {
+            color:#333;
+            font-size:90%;
+            margin:0 0 10px 0;
+            padding:0;
+            line-height:1em;
+            border:0 none;}
+                .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-title {
+                font-weight:700;
+                font-size:1.3em;
+                text-transform:capitalize;
+                border:0 none;}
+                .sys_theme-simple .sys_comments-control .sys_add-your-comment label {
+                font-weight:700;
+                display:block;
+                padding:.8em 0;}
+
+                .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-row {
+                clear:both;
+                width:100%;
+                }
+
+                    .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-row input {
+                    width:100%}
+                    .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-row textarea {
+                    width:100%;
+                    font-size:1.3em;}
+
+                .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_comments-rating-and-button {
+                height:1%;
+                padding:10px 20px 10px 0;
+                }
+
+                    .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_comments-rating-and-button input.sys_button {
+                    background:url("#{$assetspath}/Img/Btn_AddComment.gif") 0 0 no-repeat;
+                    border:0 none;
+                    width:128px;
+                    height: 24px;
+                    padding:4px 10px;
+                    margin:0;
+                    cursor:pointer;}
+
+                    .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-validationtext {
+                    color:#fff;
+                    background:#ca2e1e;
+                    margin:1em 0 15px 0;
+                    padding:12px;}
+                    .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-validationtext.sys_addcomments-successful {
+                    background:#47a42d;}
+
+                        .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-validationtext h2 {
+                        color:#fff;
+                        font-size:1.2em;
+                        margin:0 0 10px 0;
+                        padding:0;
+                        font-weight:700;}
+
+                        .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-validationtext ul {
+                        margin:0;
+                        padding:0 0 0 25px;}
+
+                        .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-validationtext ul li {
+                        font-size:1.1em;
+                        color:#fff;
+                        list-style-type:none;
+                        font-weight:700;
+                        border:0 none;
+                        margin:0;
+                        padding:.3em 0 .3em 20px;
+                        background:url("/aspnet_client/ContensisThemes/Simple/common/Imgs/ValidationBullet.png") 0 50% no-repeat;}
+                        .sys_theme-simple .sys_comments-control .sys_add-your-comment .sys_addcomments-validationtext.sys_addcomments-successful ul li {
+                        background:url("/aspnet_client/ContensisThemes/Simple/common/Imgs/ValidationBullet2.png") 0 50% no-repeat;}
+
+
+
+
+        /* Star Rating Control */
+
+        .sys_theme-simple  .sys_rating-control {margin-top:14px;min-height:60px;position:relative;}
+            .sys_theme-simple  .sys_rating-control .sys_rating-label {font-weight:700;}
+
+        .sys_theme-simple  .sys_rating-control .sys_rating-stars {position:relative;/*width:255px;*/}
+        .sys_theme-simple  .sys_rating-control .sys_rating-stars.sys_rating-control-required {width:240px;}
+        .sys_theme-simple  .sys_rating-control .sys_ui-stars-star, .sys_theme-simple  .sys_rating-control .sys_ui-stars-cancel {
+            cursor: pointer;
+            display: block;
+            float: left;
+            overflow: hidden;
+            text-indent: -999em;
+        }
+        .sys_theme-simple  .sys_rating-control .sys_ui-stars-star a, .sys_theme-simple  .sys_rating-control .sys_ui-stars-cancel a {
+            background: url("#{$assetspath}/Img/stars-set-1.png") no-repeat scroll 0 0 transparent;
+            display: block;
+            height: 26px;
+            position: relative;
+            width: 28px;
+        }
+        .sys_theme-simple .sys_rating-control .sys_ui-stars-star a {
+            background-position: 0 -56px;
+        }
+        .sys_theme-simple .sys_rating-control .sys_ui-stars-star-on a {
+            background-position: 0 -84px;
+        }
+        .sys_theme-simple .sys_rating-control .sys_ui-stars-star-hover a {
+            background-position: 0 -112px;
+        }
+        .sys_theme-simple .sys_rating-control .sys_ui-stars-cancel-hover a {
+            background-position: 0 -28px;
+        }
+        .sys_theme-simple .sys_rating-control .sys_ui-stars-star-disabled, .sys_theme-simple .sys_rating-control .sys_ui-stars-star-disabled a, .sys_theme-simple .sys_rating-control .sys_ui-stars-cancel-disabled a {
+            cursor: default !important;
+        }
+
+        .sys_theme-simple .sys_rating-control .sys_rating-stars label.sys_star-label {display:block;float:left;clear:both;width:auto;padding:0.2em 0;}
+        .sys_theme-simple .sys_rating-control .sys_rating-stars.sys_enhanced-rating label.sys_star-label {font-weight:700; padding:0.8em 0;float:none;clear:none;display:none;}
+
+        .sys_theme-simple .sys_rating-control .sys_rating-stars.sys_radio-rating {padding:10px;}
+        .sys_theme-simple .sys_rating-control .sys_rating-stars.sys_radio-rating.sys_enhanced-rating {padding:10px 0;}
+        .sys_theme-simple .sys_rating-control .sys_rating-stars.sys_radio-rating .sys_radio-rating-item {clear:both;width:105px;}
+        .sys_theme-simple .sys_rating-control .sys_rating-stars.sys_radio-rating .sys_radio-rating-item input {float:left;}
+        .sys_theme-simple .sys_rating-control .sys_rating-stars.sys_radio-rating .sys_radio-rating-item label {float:right;}
+
+
+
+        .sys_theme-simple .sys_rating-control .sys_rating-stars input {float:left;width:13px !important;}
+        .sys_theme-simple .sys_rating-control .sys_rating-caption {
+        /*position:absolute;
+        top:4px;
+        right:0;*/
+        /*width:47px;*/
+        float:left;
+        height:16px;
+        padding:6px 8px;
+        display:block;
+        color:#666;
+        text-align:center;
+        /*background: url("Imgs/stars-rating-caption-bg-1.gif") no-repeat scroll 0 0 transparent;*/}
+
+
+        /* Dialog Boxes */
+        .sys_theme-simple .sys_dialogbox {
+        color:#333333;
+        background:#ffffcc;
+        width:400px;
+        min-height:120px;
+        padding:12px 20px;
+        border:5px solid #ffcc66;
+        border-radius:8px;}
+
+            .sys_theme-simple #reportThisPost {
+                text-align: left;
+            }
+
+            .sys_theme-simple .sys_dialogbox-reportthispost {
+                z-index: 999;
+            }
+
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-heading {font-weight:700;font-size:1.3em;}
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-summary {font-weight:400;padding:8px 0 15px 0;}
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-options input {cursor:pointer;margin-right:6px;color:#555555;background:#fff;border:3px solid #666;padding:4px 7px;font-weight:700;font-family:Arial, Helvetica, sans-serif;border-radius:5px;}
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-options input:hover {background-color:#ebfcfb;}
+
+
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-options input.sys_dialogbox-reportbtn {border-color:#cc3333;}
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-options input.sys_dialogbox-reportbtn:hover {color:#fff; background-color:#cc3333;}
+
+
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-options .sys_dialogbox-options-notice {text-align:right;font-weight:700;padding:10px 0 20px 0;}
+
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-close {cursor:pointer;position:absolute;top:4px;right:4px;width:26px;height:26px;background: url("Imgs/dialog-close-btn.gif") no-repeat scroll 0 0 transparent;overflow:hidden;}
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-close span {display:none;}
+            .sys_theme-simple .sys_dialogbox .sys_dialogbox-close:hover {background: url("Imgs/dialog-close-btn2.gif") no-repeat scroll 0 0 transparent;}
+
+            .sys_theme-simple .sys_dialogbox-closebutton {margin:20px 0 10px 0; width:104px;height:20px;padding:7px 5px;text-align:center;background: url("Imgs/dialog-close-btnlarge.gif") no-repeat scroll 0 0 transparent;}
+            .sys_theme-simple .sys_dialogbox-closebutton a {text-decoration:none;font-weight:700;color:#663333;}
+
+    /* --- */
+
+
+    /*---- Moderation and Approval Steps ----*/
+    /* Comment Status */
+            .sys_theme-simple div.sys_comments-control ul li.sys_comment-approved div.sys_comment-status, .sys_theme-simple div.sys_comments-control ul li.sys_comment-awaitingapproval div.sys_comment-status, .sys_theme-simple div.sys_comments-control ul li.sys_comment-declined div.sys_comment-status {
+            height:15px;
+            margin:10px 0 ;
+            padding:0;
+            text-align:left;
+            font-size:1em;
+            }
+                .sys_theme-simple div.sys_comments-control ul li.sys_comment-approved div.sys_comment-status {
+                color:#3fac1e;
+                }
+
+                .sys_theme-simple div.sys_comments-control ul li.sys_comment-awaitingapproval div.sys_comment-status {
+                color:#c67e31;
+                }
+
+                .sys_theme-simple div.sys_comments-control ul li.sys_comment-declined div.sys_comment-status {
+                color:#b60000;
+                }
+
+                .sys_theme-simple div.sys_comments-control ul li.sys_comment-awaitingapproval div.sys_comments-text, .sys_theme-simple div.sys_comments-control ul li.sys_comment-declined div.sys_comments-text {
+                color:#777;
+                font-style:italic;}
+
+                .sys_theme-simple div.sys_comments-control ul li.sys_comment-awaitingapproval cite, .sys_theme-simple div.sys_comments-control ul li.sys_comment-declined cite {color:#777;}
+
+
+            /* Moderator Edit Mode - Textarea */
+            .sys_theme-simple div.sys_comments-control ul li textarea.sys_edit-user-comments {
+            width:98%;}
+
+.sys_addcomments-title {
+    display: none;
+}

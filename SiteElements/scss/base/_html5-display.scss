@@ -1,0 +1,12 @@
+
+/* $HTML5 Display
+================================================== */
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+figure {
+    margin: 0;
+}

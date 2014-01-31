@@ -1,0 +1,91 @@
+
+/* $Form-Module
+================================================== */
+
+//Zengent - Added .feedback-module
+.form-module .form-container,
+.checkbox-module .checkbox-container,
+.feedback-module {
+	overflow: hidden;
+	background: #fff;
+	padding: 20px;
+}
+
+.checkbox-module .checkbox-container {
+	padding-bottom: 0;
+}
+
+.form-module .form-container form {
+	clear: both;
+	padding-top: 10px;
+}
+
+.form-module .form-container form:first-child {
+	padding-top: 0;
+}
+
+.form-module .form-container .help {
+	background: $bg-button;
+	font-size: 15 + px;
+	padding: 20px 50px 20px 75px;
+	position: relative;
+}
+
+.form-module .form-container .help p {
+	margin: 0;
+	padding: 0;
+	line-height: 1.25em;
+}
+
+.form-module .form-container .input-field .faux-radio {
+	clear: none;
+	margin: 20px 20px 0 0;
+}
+
+//Zengenti - Added styling definitions for contensis forms
+.form-module .form-container .input-field .grid-4 span,
+.form-module .sys_radio label {
+	display: block;
+	float: left;
+	padding: 27px 40px 0 0;
+	font-family: $font-light;
+}
+
+.form-module .form-container .date select,
+.form-module .sys_date input {
+	float: left;
+}
+
+.no-js .calendar {
+	display: none;
+}
+
+.form-module .sys_date input {
+	display: block;
+	width: 191px;
+	height: 62px;
+	background: transparent url('#{$assetspath}/img/icon-calendar.png') no-repeat 140px 15px;
+	border: 1px solid $border-main;
+	outline: 0;
+	cursor: pointer;
+	padding: 0 20px;
+	margin-left: 0;
+}
+
+.form-module .form-container textarea {
+	padding: 20px;
+	width: 100%;
+	max-width: 418px;
+	font-size: 15px;
+	min-height: 85px;
+	resize: both;
+}
+
+.checkbox-module .checkbox-container form {
+	line-height: 45px;
+}
+
+.checkbox-module .checkbox-container span {
+	margin-bottom: 20px;
+	display: inline-block;
+}

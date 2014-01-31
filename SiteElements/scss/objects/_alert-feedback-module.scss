@@ -1,0 +1,16 @@
+
+/* $Alert-Feedback-Module
+================================================== */
+
+.alert-module,
+.feedback-module {
+	background: $bg-button;
+	padding: 10px 0;
+}
+
+.alert-module h3,
+.feedback-module h3 {
+	font-family: $font-light;
+	padding: 17px 20px;
+}
+

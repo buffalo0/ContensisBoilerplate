@@ -1,0 +1,119 @@
+
+/* $Buttons
+================================================== */
+
+.links-module .button,
+.links-module .button-blue,
+.alert-module .button a,
+.feedback-module .button a,
+.tab-list .button,
+.news-button a,
+.homepage-news-button a,
+.results-module .results-container .button,
+.rate-button a,
+.contact-button a,
+.personnel-button a,
+.steps-buttons a,
+.roadworks-button a {
+	margin: 0 0 0 20px;
+	padding: 20px;
+	background: $bg-button;
+	display: block;
+	font-family: $font-light;
+}
+
+.tax-pay .button {
+	background: #fff;
+	font-family: $font-light;
+	display: block;
+	float: right;
+	padding: 17px 0;
+	width: 100%;
+	text-indent: 20px;
+	position: absolute;
+	bottom: 20px;
+}
+
+.links-module .button-blue,
+.steps-buttons .back,
+.steps-buttons .next {
+	background: $bg-tab;
+}
+
+.alert-module .button a,
+.feedback-module .button a,
+.results-module .results-container .button {
+	background: #fff;
+}
+
+.tab-list .button {
+	margin: 0 -20px 0 0;
+}
+
+.news-button a,
+.homepage-news-button a,
+.contact-button a,
+.personnel-button a {
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	width: 180px;
+}
+
+.rate-button {
+	float: right;
+}
+
+.slideshow-controller {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.slideshow-controller a {
+	display: block;
+	border-left: 1px solid #fff;
+	min-height: 84px;
+	background-color: $bg-title;
+}
+
+
+.slideshow-controller span {
+	position: relative;
+	left: 27%;
+	top: 16px;
+}
+
+.panel .button,
+.download-panel .button,
+.filter .button {
+	float: right;
+	position: relative;
+	display: block;
+}
+
+.filter .button {
+	margin-right: 0;
+}
+
+.pay {
+	font-family: $font-light;
+}
+
+.steps-buttons {
+	float: right;
+	margin: -9px 0 10px;
+}
+
+.steps-buttons .solo {
+	float: right;
+}
+
+.steps-buttons a {
+	margin-left: 0;
+	padding: 17px 20px;
+}
+
+.steps-buttons a:first-child {
+	margin-right: 1px;
+}

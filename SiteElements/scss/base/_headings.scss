@@ -1,0 +1,78 @@
+
+/* $Headings
+================================================== */
+
+/**
+ * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ *
+ * When we define a heading we also define a corresponding class to go with it.
+ * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
+ * heading hierarchy.
+ */
+h1, .alpha {
+    @include font-size($h1-size);
+}
+
+h2, .beta {
+    @include font-size($h2-size);
+}
+
+//Zengenti - Added classes to style contensis forms
+h3, .gamma {
+    @include font-size($h3-size);
+    line-height: 30px;
+}
+
+.form-module label,
+.form-module .sys_legend,
+.form-module select,
+.form-module .custom-select,
+.form-module option,
+.form-module .sys_upload .sys_fieldcontent:before,
+.form-module .sys_cms-form-control ul.sys_cms-form-body .sys_form-submit {
+    @include font-size-important($h3-size);
+    line-height: 30px!important;
+}
+
+h4, .delta {
+    @include font-size($h4-size);
+}
+
+h5, .epsilon {
+    @include font-size($h5-size);
+}
+
+h6, .zeta {
+    @include font-size($h6-size);
+}
+
+/* Heading group */
+.heading-group {
+	margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+/**
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+.giga {
+    @include font-size($giga-size);
+}
+
+.mega {
+    @include font-size($mega-size);
+}
+
+.kilo {
+    @include font-size($kilo-size);
+}

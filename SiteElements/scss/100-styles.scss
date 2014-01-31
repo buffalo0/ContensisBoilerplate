@@ -1,0 +1,168 @@
+
+/* =================================================
+   BVA SKELETON
+================================================== */
+
+/**
+ * This document is the base of your SASS skeleton
+ * List your contents below and add a note if you feel
+ * like you need to explain what each file does.
+ *
+ * Then add your file to the import section so that it
+ * is compiled.
+ */
+
+
+/* $Contents
+================================================== */
+
+/**
+ * Contents............ You’re reading it!
+ * Imports............. Begin importing the sections _below_
+ *
+ * Vars................ Your variables
+ * Mixins.............. Useful SASS helpers - vendor prefix etc.
+ * Clearfix............ Extend this class
+ * Fonts............... Custom fonts
+ *
+ * ------- Base -------
+ * Grids............... Fluid, proportional and nestable grids
+ * Layout.............. High-level elements like `html`, `body`, as well as wrappers that are used on every page
+ * Headings............ Heading hierachy
+ * Paragraphs.......... Used for where paragraph styles appear over various modules
+ * Typography.......... Smallprint, quotes, bold and other text styling elements
+ * Quotes.............. Quotes and blockquote styling
+ * Links............... Used for links that are used over more than one module
+ * Lists............... Standard list style, or any lists used across different modules
+ * Images.............. Basic image control
+ * HTML5 Display....... Video, Audio, Canvas styling
+ * Tables..............
+ * Forms............... Form reset to start, followed by standard form styling for modular use
+ * Titles.............. Titles of the modules styling
+ * Buttons............. Buttons styling
+ * Alerts.............. Alerts messages and boxes styling
+ * Videos.............. Videos styling
+ *
+ * ------ Objects -----
+ * Header................... Header styling
+ * Navigation............... Navigation list
+ * Alert-feedback-module.... Module styling
+ * Tabs-module.............. Module styling
+ * Area-module.............. Module styling
+ * Links-module............. Module styling
+ * News-module.............. Module styling
+ * Intro-module............. Module styling
+ * Panel-module............. Module styling
+ * Results-module........... Module styling
+ * Tax-module............... Module styling
+ * Rate-module.............. Module styling
+ * Keywords-module.......... Module styling
+ * Directory-module......... Module styling
+ * Meetings-module.......... Module styling
+ * Archive-module........... Module styling
+ * Register-login-module.... Module styling
+ * Local-information-module. Module styling
+ * Contact-module........... Module styling
+ * Login-register-module.... Module styling
+ * Request-module........... Module styling
+ * Steps-module............. Module styling
+ * Review-module............ Module styling
+ * Form-module.............. Module styling
+ * Upload-module............ Module styling
+ * Audio-module............. Module styling
+ * Personnel-module......... Module styling
+ * Video-module............. Module styling
+ * Roadworks-module......... Module styling
+ * Bin-module............... Module styling
+ * Twitter-module........... Module styling
+ * Footer................... Footer styling
+ * Icons.................... Icons styling
+ * Javascript-conrols....... Javascript controls/elements styling
+ * Pikaday.................. Custom date picker styling
+ * Payments-module.......... Module styling
+ *
+ * ------- Media ------
+ * 768 Media........... Media Queries for devices < 768
+ * 690 Media........... Media Queries for devices < 690
+ * 480 Media........... Media Queries for devices < 480
+ * Retina Media........ Media Queries for retina devices
+ * Print Media......... Media Queries for print
+ *
+ * Helper.............. A series of helper classes to use arbitrarily
+ */
+
+
+/* $Imports
+================================================== */
+/* global styles and options that are used site wide */
+@import "global/vars";
+@import "global/mixins";
+@import "global/clearfix";
+@import "global/fonts";
+
+/* Base styles unclassed HTML elements */
+@import "base/grids";
+@import "base/layout";
+@import "base/headings";
+@import "base/paragraphs";
+@import "base/typography";
+@import "base/quotes";
+@import "base/links";
+@import "base/lists";
+@import "base/images";
+@import "base/html5-display";
+@import "base/tables";
+@import "base/forms";
+@import "base/titles";
+@import "base/buttons";
+@import "base/alerts";
+@import "base/videos";
+
+/* Objects and modules */
+@import "objects/header";
+@import "objects/nav";
+@import "objects/alert-feedback-module";
+@import "objects/tabs-module";
+@import "objects/area-module";
+@import "objects/links-module";
+@import "objects/news-module";
+@import "objects/intro-module";
+@import "objects/panel-module";
+@import "objects/results-module";
+@import "objects/tax-module";
+@import "objects/rate-module";
+@import "objects/keywords-module";
+@import "objects/directory-module";
+@import "objects/meetings-module";
+@import "objects/archive-module";
+@import "objects/register-login-module";
+@import "objects/local-information-module";
+@import "objects/contact-module";
+@import "objects/login-register-module";
+@import "objects/request-module";
+@import "objects/steps-module";
+@import "objects/review-module";
+@import "objects/form-module";
+@import "objects/upload-module";
+@import "objects/twitter-module";
+@import "objects/audio-module";
+@import "objects/personnel-module";
+@import "objects/video-module";
+@import "objects/roadworks-module";
+@import "objects/bin-module";
+@import "objects/footer";
+@import "objects/icons";
+@import "objects/javascript-controls";
+@import "objects/pikaday";
+@import "objects/payments-module";
+@import "objects/white-box-module";
+
+/* Media queries */
+@import "media/768";
+@import "media/690";
+@import "media/480";
+@import "media/retina";
+@import "media/print";
+
+/* Helper classes */
+@import "global/helper";

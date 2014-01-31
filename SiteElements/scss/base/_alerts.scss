@@ -1,0 +1,30 @@
+
+/* $Alerts
+================================================== */
+
+.error-message {
+	font-family: $font-light;
+	color: #fff;
+	padding: 17px 70px 17px 20px;
+	background: $bg-error;
+	position: relative;
+}
+
+.roadworks-module .error-message {
+	display: block;
+	margin: 20px;
+	padding: 21px 70px 21px 20px;
+	font-family: $font-regular;
+}
+
+.error-message p {
+	margin: 0;
+}
+
+.error-message .arrow-down {
+	position: absolute;
+	bottom: -10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid $bg-error;
+}

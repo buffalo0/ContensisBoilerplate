@@ -1,0 +1,100 @@
+
+/* $Intro-Module
+================================================== */
+
+.intro-container {
+	background: #fff;
+	padding: 15px 20px 20px;
+}
+
+.intro-container h3 {
+	font-family: $font-light;
+	width: 62.5%;
+}
+
+.intro-container .name {
+	display: block;
+	padding-bottom: 10px;
+}
+
+.intro-container p {
+	max-width: 545px;
+	margin: 5px 0 0;
+}
+
+.intro-container .divider {
+	border-top: 1px solid $border-main;
+	margin-top: 15px;
+	padding-top: 15px;
+	clear: both;
+}
+
+.intro-container ul {
+	margin-top: 5px;
+}
+
+.intro-container li {
+	max-width: 190px;
+	margin-top: 10px;
+}
+
+.intro-container .address {
+	float: left;
+}
+
+.intro-container .mail-phone {
+	margin-bottom: 55px;
+}
+
+.intro-container .mail-phone p {
+	margin-top: 0;
+}
+
+.intro-container .mail-phone p:first-child {
+	margin-top: .5em;
+	margin-bottom: 0;
+}
+
+.intro-container .mail-phone span {
+	padding-left: 28px;
+}
+
+.intro-container .mail-phone p:first-child span {
+	padding-left: 34px;
+}
+
+.intro-container .links-list {
+	overflow: hidden;
+	margin-top: 0;
+}
+
+.intro-container .links-list li {
+	max-width: 100%;
+	margin-top: 0
+}
+
+.intro-container .links-list li h3 {
+	margin-top: 25px;
+	padding-top: 15px;
+	border-top: 1px solid $border-main;
+}
+
+.intro-container .links-list .first-row h3 {
+	border-top: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.intro-container .links-list li h3,
+.intro-container .links-list li ul {
+	margin-right: 40px;
+}
+
+.intro-container .links-list .last-column h3,
+.intro-container .links-list .last-column ul {
+	margin-right: 0
+}
+
+.intro-container .links-list li li {
+	margin-top: 12px;
+}

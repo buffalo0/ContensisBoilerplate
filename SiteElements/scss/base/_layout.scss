@@ -1,0 +1,101 @@
+
+/* $Layout
+================================================== */
+
+html {
+    font: ($base-font-size / 16 +em)/($base-line-height / $base-font-size) serif;
+    overflow-y: scroll;
+}
+
+body {
+	max-width: $gridWidth;
+	margin: 0 auto;
+	background: $bg-site;
+	color: $color-main;
+}
+
+.lt-ie9 body {
+	width: 960px;
+}
+
+html, button, input, select, textarea {
+	font-family: $font-regular;
+}
+
+//Zengenti - Added .feedback-module .sys_comments-rating-and-button .sys_button
+.header,
+.homepage-title,
+.alert-module,
+.feedback-module,
+.tabs-module,
+.area-module,
+.links-module,
+.breadcrumb-module,
+.news-module,
+.homepage-news-module,
+.featured-events-module,
+.featured-news-module,
+.slideshow-news-module,
+.intro-module,
+.panel-module,
+.download-panel-module,
+.listing-panel-module,
+.results-module,
+.tax-module,
+.slideshow-module,
+.rate-module,
+.twitter-module,
+.keywords-module,
+.directory-module,
+.invoice-module,
+.video-module,
+.related-video-module,
+.meetings-module,
+.area-postcode-block,
+.feedback-module .sys_comments-rating-and-button .sys_button,
+.register-login-module,
+.local-informations-module,
+.tabs-map,
+.request-module,
+.steps-module,
+.form-module,
+.upload-module,
+.archive-module,
+.login-register-module,
+.audio-module,
+.checkbox-module,
+.personnel-module,
+.bin-module,
+.payments-module,
+.white-box-module,
+.footer {
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.tabs-module {
+	overflow: visible;
+}
+
+.slideshow-module {
+	position: relative;
+	background: #fff;
+}
+
+.feedback-module {
+	margin-bottom: 0;
+	box-sizing: border-box;
+}
+
+.footer {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}

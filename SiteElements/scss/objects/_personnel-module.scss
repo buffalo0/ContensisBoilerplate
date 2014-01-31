@@ -1,0 +1,59 @@
+
+/* $Personnel-Module
+================================================== */
+
+.personnel-module .personnel-container li {
+	background: #fff;
+	margin-top: 1px;
+	overflow: hidden;
+	padding: 20px 0;
+	position: relative;
+}
+
+.personnel-module .personnel-container li:first-child {
+	margin-top: 0;
+}
+
+.personnel-module .personnel-container h3 {
+	font-family: $font-light;
+	float: left;
+	width: 50%;
+}
+
+.personnel-module .personnel-container h3 ~ p {
+	color: #888;
+	float: left;
+	display: block;
+	margin: 0;
+	width: 50%;
+}
+
+.personnel-module .personnel-container img {
+	margin: 0 20px;
+	float: left;
+	border: 1px solid $border-main;
+}
+
+.personnel-module .personnel-container .address,
+.personnel-module .personnel-container .mail-phone {
+	width: 35%;
+	float: left;
+	padding-top: 18px;
+}
+
+.personnel-module .personnel-container .address p,
+.personnel-module .personnel-container .mail-phone p {
+	margin: 0;
+}
+
+.personnel-module .personnel-container .mail-phone a {
+	word-wrap: break-word;
+}
+
+.personnel-module .personnel-container p:first-child span {
+	padding-left: 34px;
+}
+
+.personnel-module .personnel-container .mail-phone span {
+	padding-left: 28px;
+}

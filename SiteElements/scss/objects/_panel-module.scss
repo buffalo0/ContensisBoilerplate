@@ -1,0 +1,112 @@
+
+/* $Panel-Module
+================================================== */
+
+.panel,
+.download-panel {
+	position: relative;
+}
+
+.panel-container,
+.download-panel-container,
+.listing-panel-container {
+	background: #fff;
+	padding: 15px 20px;
+}
+
+.panel-container h3,
+.download-panel-container h3 {
+	font-family: $font-light;
+	max-width: 680px;
+}
+
+.panel-container h3 {
+	margin-top: 35px;
+}
+
+.panel-container h3:first-child {
+	margin-top: 0;
+}
+
+.download-panel-container h3 {
+	padding-bottom: 25px;
+}
+
+.panel-container p {
+	max-width: 680px;
+	margin: 5px 0 0;
+}
+
+//Added by Zengenti
+.download-panel-container p {
+	margin: 0;
+}
+
+//Zengent - Added .download-panel-container p
+.panel-container li,
+.download-panel-container li,
+.download-panel-container p,
+.listing-panel-container li {
+	margin-top: 10px;
+	padding: 15px 0 7px;
+	border-top: 1px solid $border-main;
+}
+
+//Added by Zengenti
+.download-panel-container p {
+	padding-left: 33px;
+	position: relative;
+	&:before {
+		background: url("/SiteElements/img/spritemap.png") transparent no-repeat -300px -100px;
+		content: "";
+		position: absolute;
+		width: 13px;
+		height: 16px;
+		top: 19px;
+		left: 0;
+	}
+	a {
+		border-bottom: 1px solid $border-underline;
+	}
+}
+
+//Added by Zengenti
+.panel-container .news-single {
+	margin: 0;
+}
+
+//Zengent - Added .download-panel-container p:first-child
+.download-panel-container li:first-child,
+.download-panel-container h3 + p,
+.listing-panel-container li:first-child {
+	border-top: none;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+//Added by Zengenti
+.download-panel-container h3 + p:before {
+	top: 6px;
+}
+
+.download-panel .icon-download {
+	right: 10px;
+}
+
+.listing-panel-container h3 {
+	font-family: $font-light;
+}
+
+//Add text after documents
+.download-panel-container p a {
+	&:after {
+		padding-left: 5px;
+		position: absolute;
+	}
+	&.sys_17:after {
+		content: " PDF";
+	}
+	&.sys_21:after {
+		content: " MS WORD";
+	}
+}

@@ -1,0 +1,76 @@
+
+/* $Header
+================================================== */
+
+.header {
+	font-family: $font-light;
+	overflow: visible;
+	float: left;
+	position: relative;
+}
+
+.header .logo-print {
+	display: none;
+}
+
+.header + div {
+	clear: both;
+}
+
+.logo {
+	background: $bg-logo;
+}
+
+.logo span {
+	margin: 20px 20px 50px;
+}
+
+.search a,
+.account p,
+.directory a,
+.mobile-nav-container a {
+	margin: 0 0 1px 1px;
+	display: block;
+}
+
+.search a {
+	background: #fff;
+}
+
+.account p,
+.mobile-nav-container a {
+	background: $bg-account;
+}
+
+.mobile-nav-container div + div + div a {
+	background: $bg-tab;
+}
+
+.mobile-nav-container .grid-2 a {
+	background: $bg-button;
+}
+
+.search a,
+.account p,
+.directory a,
+.mobile-nav-container a {
+	padding: 17px 20px;
+}
+
+//Zengenti live search
+#LiveSearchResults {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	top: 64px;
+	border: 2px solid $color-main;
+}
+
+#LiveSearchResults li {
+	background-color: #fff;
+	padding: 16px 10px 16px 20px;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid $color-main;
+	box-sizing: border-box;
+}

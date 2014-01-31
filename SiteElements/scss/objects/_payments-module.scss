@@ -1,0 +1,49 @@
+
+/* $Payments-Module
+================================================== */
+
+.payments-module .payments-container {
+	background: #fff;
+	padding: 20px 0 0;
+	overflow: hidden;
+}
+
+.payments-module .gamma {
+	font-family: $font-light;
+}
+
+.payments-module h3 {
+	padding: 0 20px;
+	margin: 0;
+}
+
+.payments-module .divider {
+	height: 1px;
+	background: $border-main;
+	margin: 10px 20px 0;
+}
+
+.payments-module .grid-2 {
+	min-height: 230px;
+}
+
+.payments-module .grid-2 span {
+	margin: 0 20px;
+	border-top: 1px solid $border-main;
+	overflow: hidden;
+	display: block;
+	padding: 20px 0;
+}
+
+.payments-module .grid-2 .first-row {
+	border-top: none;
+}
+
+.payments-module .grid-2 h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.payments-module .grid-2 li {
+	padding-top: 10px;
+}

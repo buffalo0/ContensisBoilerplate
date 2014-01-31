@@ -1,0 +1,116 @@
+
+/* $Mixins
+================================================== */
+
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ *
+   `@include font-size(10);`
+ *
+ */
+@mixin font-size($font-size) {
+    font-size: $font-size +px;
+    font-size: $font-size / $base-font-size +rem;
+    line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size);
+}
+
+@mixin font-size-important($font-size) {
+    font-size: $font-size +px!important;
+    font-size: $font-size / $base-font-size +rem!important;
+    line-height: ceil($font-size / $base-line-height) * ($base-line-height / $font-size)!important;
+}
+
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(box-sizing, border-box);`
+ *
+ */
+@mixin vendor($property, $value) {
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+}
+
+/**
+ * Create border-radius CSS in one go, e.g.
+ *
+   `@include rounded-corners(value);`
+ *
+ */
+@mixin rounded-corners($value) {
+	-webkit-border-radius: $value;
+	   -moz-border-radius: $value;
+			border-radius: $value;
+}
+
+.rounded-top{
+	@include rounded-corners(12px 0px 0px 0px);
+}
+
+/**
+ * Colorize function: reate darken or lighten variant of a declared colour, e.g.:
+ * n value defaults to the declared colour
+ *
+   `background: colorize($color-1,l1);`
+   `color: colorize($bg-1, d1);`
+   `border: 1px solid colorize($color-2, n);`
+ *
+ */
+@function colorize($color, $change: n) {
+  @if $change == n {
+    @return $color;
+  }
+  @if $change == l1 {
+    @return lighten($color, 10%);
+  }
+  @if $change == l2 {
+    @return lighten($color, 20%);
+  }
+  @if $change == l3 {
+    @return lighten($color, 30%);
+  }
+  @if $change == l4 {
+    @return lighten($color, 40%);
+  }
+  @if $change == d1 {
+    @return darken($color, 10%);
+  }
+  @if $change == d2 {
+    @return darken($color, 20%);
+  }
+  @if $change == d3 {
+    @return darken($color, 30%);
+  }
+  @if $change == d4 {
+    @return darken($color, 40%);
+  }
+}
+
+/**
+ * Media Query Mixin for min/max/min-device and max-device width or height, e.g.:
+ * Base font size needs to be declared
+ *
+   `@include mq(480, max)`
+   `@include mq($tablet, true, min, height)`
+ *
+ */
+@mixin mq($point, $query1: min, $query2: width) {
+    @media screen and (#{$query1}-#{$query2}: $point / 16 +em) {
+        @content;
+    }
+}
+
+// media query 'major breakpoint' variables
+$tablet: 720;
+$mobile: 480;
+
+// media query orientation variables
+@mixin orient($orientation: landscape) {
+    @media (orientation : $orientation) {
+        @content;
+    }
+}

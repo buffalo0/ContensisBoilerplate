@@ -1,0 +1,55 @@
+
+/* $Retina Media Queries
+================================================== */
+
+@media only screen and (-moz-min-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+
+	.icon-search,
+	.icon-expand,
+	.icon-facebook,
+	.icon-twitter,
+	.icon-flickr,
+	.icon-arrow-down,
+	.icon-prev span,
+	.icon-next span,
+	.icon-fullscreen,
+	.panel .button,
+	.download-panel-open .button,
+	.download-panel-close .button,
+	.filter-open .button,
+	.filter-close .button,
+	.icon-download,
+	.icon-error,
+	.icon-asterisk,
+	.icon-help,
+	.icon-arrow-right,
+	.icon-document,
+	.icon-delete,
+	.form-module .form-container .calendar a,
+	.pika-prev,
+	.is-rtl .pika-next,
+	.pika-next,
+	.is-rtl .pika-prev,
+	.dd-btn,
+	.faux-radio,
+	.faux-checkbox,
+	.icon-play,
+	.icon-list {
+		background-image: url('/SiteElements/img/spritemap@2x.png');
+		background-size: 500px 1100px;
+	}
+
+	.icon-logo {
+		background-image: url('/SiteElements/img/logo@2x.png');
+		background-size: 201px 59px;
+	}
+
+	.icon-calendar {
+		background-image: url('/SiteElements/img/icon-calendar@2x.png');
+		background-size: 29px 29px;
+	}
+
+}

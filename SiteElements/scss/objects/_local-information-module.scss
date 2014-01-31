@@ -1,0 +1,61 @@
+
+/* $Local-Information-Module
+================================================== */
+
+.local-ward h3,
+.local-ward div,
+.local-information h3,
+.local-information div {
+	margin-right: 1px;
+}
+
+.local-ward h2,
+.local-information h2,
+.local-application h2 {
+	margin: 0 1px 1px 0;
+}
+
+.local-application h2 {
+	margin-right: 0;
+}
+
+.local-ward h3,
+.local-information h3,
+.local-application h3 {
+	font-family: $font-light;
+	padding-bottom: 10px;
+}
+
+.local-list {
+	padding: 0 20px;
+	background: $bg-pay;
+}
+
+.local-list > ul > li {
+	padding: 17px 0;
+	border-top: 1px solid $border-main;
+}
+
+.local-list > ul > li:first-child {
+	border-top: none;
+	margin-top: 0;
+	padding-top: 17px;
+}
+
+.local-list div li {
+	margin-top: 10px;	
+}
+
+.local-list div li:first-child {
+	margin-top: 0;
+}
+
+.local-information .area-information div {
+	padding: 0;
+	min-height: 0;
+}
+
+.local-information .area-information h3 {
+	min-height: 0;
+	padding-bottom: 10px;
+}

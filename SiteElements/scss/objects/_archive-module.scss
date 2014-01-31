@@ -1,0 +1,82 @@
+
+/* $Archive-Module
+================================================== */
+
+.archive-module .refine-column h3 {
+	margin: 0 1px 1px 0;
+	padding-bottom: 16px;
+}
+
+.archive-module .refine-column .year-refine li {
+	margin: 0;
+	padding: 0;
+	border-bottom: none;
+	border-top: 1px solid $border-main;
+}
+
+.archive-module .refine-column .year-refine li:first-child {
+	padding-top: 0;
+}
+
+.archive-module .refine-column .year-refine li a {
+	padding: 17px 20px;
+	margin: 0 1px 1px 0;
+}
+
+.archive-module .refine-column h3,
+.archive-module .refine-column .filter li a {
+	background: $bg-title;
+}
+
+.archive-module .refine-column .year-refine .active a {
+	background: $bg-button;
+}
+
+.archive-module .refine-column a {
+	font-family: $font-light;
+}
+
+.archive-module .refine-column .year-refine li a:hover,
+.archive-module .refine-column .year-refine li a:active,
+.archive-module .refine-column .year-refine li a:focus {
+	background: $bg-account;
+}
+
+.archive-module .refine-column .select-type-container {
+	background: $bg-title;
+	padding: 20px;
+	margin: 0 1px 1px 0;
+}
+
+.archive-module .results-container li:first-child {
+	margin-top: 0;
+}
+
+.archive-module .results-container .meetings-list li {
+	padding: 15px 0;
+	margin: 0;
+}
+
+.archive-module .results-container .meetings-list p {
+	margin: 0;
+}
+
+.archive-module .results-container .button {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+.archive-module .select-field {
+	overflow: hidden;
+	background: #fff;
+	margin: 10px 20px 20px;
+}
+
+.archive-module .custom-select-container {
+	width: 99.4%;
+}
+
+.archive-module .dd-wrap .selected {
+	width: 40%;
+}

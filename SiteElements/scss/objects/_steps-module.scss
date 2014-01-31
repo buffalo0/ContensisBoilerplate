@@ -1,0 +1,56 @@
+
+/* $Steps-Module
+================================================== */
+
+.steps-module ul {
+	list-style: none;
+}
+
+.steps-module li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	background: $bg-account;
+}
+
+.steps-module .active {
+	background: $bg-button;
+}
+
+.steps-module a {
+	padding: 21px 10px 21px 55px;
+	display: block;
+	position: relative;
+}
+
+.steps-module li:first-child a {
+	padding-left: 20px
+}
+
+.steps-module .arrow-right-inner {
+	position: absolute;
+	right: -35px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-top: 32px solid transparent;
+	border-bottom: 32px solid transparent;
+	border-left: 35px solid $bg-account;
+	z-index: 2;
+}
+
+.steps-module .active .arrow-right-inner {
+	border-left-color: $bg-button;
+}
+
+.steps-module .arrow-right-outer {
+	position: absolute;
+	right: -36px;
+	top: 0;
+	width: 0;
+	height: 0;
+	border-top: 32px solid transparent;
+	border-bottom: 32px solid transparent;
+	border-left: 35px solid $border-main;
+}
+

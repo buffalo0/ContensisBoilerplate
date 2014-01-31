@@ -1,0 +1,85 @@
+
+/* Hiding Content that needs to be revealed, but only if JS is enabled */
+
+.js .js-accordion-content,
+.js .js-filter-content,
+.js .js-tab-content,
+.no-js-solution {
+	display: none
+}
+	.footer .js-accordion-content,
+	.mobile-nav-container.js-accordion-content {
+		display: block;
+	}
+
+
+/* showing Content that is a no-js soluton */
+
+.no-js .no-js-solution {
+	display: block;
+}
+
+
+/* Tabs */
+
+.js-tab-control {
+	cursor: pointer;
+	@extend %prevent-touch;
+}
+
+
+
+/* Accordions */
+
+.js-accordion-item {
+	overflow: hidden;
+}
+
+	
+.header .js-accordion-item {
+	overflow:visible;
+}
+.header .js-accordion-content {
+	margin-bottom:0;
+}
+.js-accordion-control {
+	position: relative;
+	z-index: 2;
+	@extend %prevent-touch;
+}
+.header .js-accordion-control {
+	z-index:0;
+}
+
+.js-accordion-content {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.refine-column .js-accordion-content {
+	margin-bottom: 0;
+}
+
+/* Slideshows */
+
+.js-slideshow-area,
+.js-slideshow-wrapper {
+	overflow: hidden;
+}
+
+.js-slideshow-wrapper,
+.js-slideshow-item {
+	position: relative;
+}
+
+.js .js-slideshow-item {
+	float: left;
+}
+
+
+
+/* Date Selector */
+
+.pika-single.is-hidden {
+	display: none;	
+}

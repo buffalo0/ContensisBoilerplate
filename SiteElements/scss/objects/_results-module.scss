@@ -1,0 +1,188 @@
+
+/* $Results-Module
+================================================== */
+
+.results-module {
+	position: relative;
+}
+
+.results-module .filter-sections {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: $font-light;
+}
+
+.results-module .search-title .filter-sections {
+	position: relative;
+}
+
+.results-module .search-title .search-form {
+	float: right;
+}
+
+.results-module .search-title .search-form .action {
+	margin-right: 10px;
+}
+
+.results-module .filter-sections a {
+	display: block;
+	padding: 27px 10px 27px 20px;
+	border-left: 1px solid #fff;
+}
+
+.results-module .search-title .filter-sections a {
+	border-left: none;
+	background: #fff;
+	padding: 17px 10px 17px 20px;
+	margin: 10px 0;
+}
+
+.results-module .mobile-refine {
+	font-family: $font-light;
+	padding: 17px 10px 17px 20px;
+	background: $bg-tab;
+	margin-bottom: 1px;
+	display: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.results-module .mobile-refine .icon-expand {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -27px;
+}
+
+.results-module .refine-column > div {
+	background: $bg-title;
+	margin-top: 1px;
+	position: relative;
+}
+
+.refine-column > div:first-child {
+	margin-top: 0;
+}
+
+.refine-column > div,
+.refine-column .refine-column-title {
+	margin-right: 1px;
+	overflow: hidden;
+}
+
+.refine-column .refine-column-title {
+	background: $bg-title;
+}
+
+.refine-column h3 {
+	font-family: $font-light;
+	display: block;
+	padding: 17px 70px 17px 20px;
+	position: relative
+}
+
+.refine-column h3 .icon-expand {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -27px;
+}
+
+.refine-column a {
+	display: block;
+}
+
+.results-module .refine-column li {
+	margin: 0 20px;
+	padding: 15px 0;
+	border-bottom: 1px solid $border-main;
+}
+
+.refine-column li:first-child {
+	padding-top: 9px;
+}
+
+.results-module .refine-column .show-more {
+	float: right;
+	margin-right: 20px;
+	padding: 15px 0;
+}
+
+.results-module .results-container h3 {
+	font-family: $font-light;
+	padding-left: 20px;
+}
+
+.results-module .actions-section,
+.results-module .pages-section {
+	overflow: hidden;
+}
+
+.results-module .pages-section-title {
+	overflow: hidden;
+	background: #fff;
+	margin-top: 1px;
+}
+
+.results-module .actions-section-title {
+	margin-bottom: 1px;
+	overflow: hidden;
+	background: $bg-button;
+}
+
+.results-module .actions-section-title h3,
+.results-module .pages-section-title h3 {
+	float: left;
+	padding: 17px 20px;
+}
+
+.results-module .results-container .show-all {
+	float: right;
+	margin: 20px;
+}
+
+.results-module .link-box {
+	width: 33.334%;
+	float: left;
+}
+
+.results-module .link-box-container {
+	background: $bg-button;
+}
+
+.results-module .link-box h3 {
+	padding-left: 0;
+}
+
+.results-module .link-box-content {
+	min-height: 153px;
+}
+
+.results-module .pages-section li {
+	margin-top: 1px;
+	background: #fff;
+	padding: 12px 0 17px;
+}
+
+.results-module .pages-section p {
+	margin: 0;
+	padding: 14px 20px 0 20px;
+	max-width: 380px;
+}
+
+.results-module .icon-arrow-down {
+	border-bottom: 0;
+	margin: 8px 0 0 8px;
+	display: block;
+}
+
+.results-module .show-all .icon-arrow-down {
+	margin-left: 16px;
+}
+
+.lt-ie8 .results-module .show-all,
+.lt-ie8 .results-module .show-more {
+	text-align: right;
+}

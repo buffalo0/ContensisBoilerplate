@@ -1,0 +1,47 @@
+
+/* $Tax-Module
+================================================== */
+
+.tax-postcode {
+	overflow: hidden;
+}
+
+.tax-information h3 {
+	font-family: $font-light;
+}
+
+.tax-information span {
+	font-family: $font-bold;
+	padding: 7px 10px;
+	line-height: 1em;
+	display: block;
+	background: #fff;
+	max-width: 200px;
+	margin-top: 12px;
+	float: left;
+}
+
+.tax-band,
+.tax-total {
+	background: $bg-pay;
+	padding: 15px 20px 20px;
+	overflow: hidden;
+}
+
+.tax-total {
+	margin-left: 1px;
+	position: relative;
+}
+
+.tax-total a {
+	display: block;
+	float: left;
+	margin: 10px 20px;
+}
+
+.tax-pay {
+	background: $bg-pay;
+	overflow: hidden;
+	min-height: 140px;
+	position: relative;
+}

@@ -1,0 +1,63 @@
+
+/* $Grids
+================================================== */
+
+// Bureau Responsive Grid
+// Based on CSS Wizardry / Harry Roberts Grid System
+// Author	: Daniel Pavitt - @dpvitt
+// URL		: http://danielpavitt.com / http://bureau-va.com
+//
+// =================================================================================
+
+/*
+ * Variables are set in:
+ * "global/_vars.scss"
+ *
+ */
+ 
+$gridWidth: $totalColumns * $columnWidth;
+
+// Grid Calculation for Percentages
+@function col($n) {
+	@return percentage( ( $n * $columnWidth ) / $gridWidth );
+}
+
+// Each column
+@mixin column($n) {
+	width: col($n);
+}
+
+// Grid container
+.grids {
+	width: auto;
+	max-width: $gridWidth;
+	clear: both;
+	list-style: none;
+	overflow: hidden;
+}
+
+// Controls the column float
+[class*="grid-"] {
+	float: left;
+}
+
+// Generates styles
+@for $i from 1 to ($totalColumns+1) {
+	.grid-#{$i}{
+		@include column($i);
+	}
+}
+
+/*
+ *	This iterates through each column and produces output like this:
+ * 
+ *	.grid-1 {
+ *		width: 6.25%;
+ *		margin-left: 2.08333%;
+ *	}
+ *
+ *
+ *	Simply add .grid-n as a class to your element
+ *	<div class="grid-12">
+ *
+ */

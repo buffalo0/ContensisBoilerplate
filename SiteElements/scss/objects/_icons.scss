@@ -1,0 +1,254 @@
+
+/* $Footer
+================================================== */
+
+.icon-logo {
+	background: transparent url('#{$assetspath}/img/logo.png') no-repeat 0 0;
+	width: 201px;
+	height: 59px;
+	display: block;
+	text-indent: -9999px;
+}
+
+.icon-search,
+.search-form .sys_search-button {
+	background: #f1f1f1 url('#{$assetspath}/img/spritemap.png') no-repeat -185px -385px;
+	width: 44px;
+	height: 44px;
+	display: block;
+	text-indent: -9999px;
+	text-transform: capitalize;
+}
+
+.icon-expand {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -100px -100px;
+	width: 54px;
+	height: 54px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.icon-facebook {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -200px -100px;
+	width: 54px;
+	height: 54px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.icon-twitter {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -200px -200px;
+	width: 54px;
+	height: 54px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.icon-flickr {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -200px -300px;
+	width: 54px;
+	height: 54px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.icon-arrow-down {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -200px -600px;
+	width: 15px;
+	height: 8px;
+	display: inline-block;
+	text-indent: -9999px;
+	float: right;
+	margin-top: 5%;
+}
+
+.icon-prev,
+.icon-next {
+	position: relative;
+}
+
+.icon-prev span {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -100px -200px;
+	height: 54px;
+	width: 54px;
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -27px;
+	margin-left: -27px;
+}
+
+.icon-next span {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -100px -300px;
+	height: 54px;
+	width: 54px;
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -27px;
+	margin-left: -27px;
+}
+
+.icon-prev.disabled,
+.icon-next.disabled {
+	cursor: not-allowed;
+	zoom: 1;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+
+.panel .button,
+.download-panel .button,
+.filter .button,
+.archive-module .panel .button,
+.related-video-module .button,
+.keyword-container .button {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -100px -700px;
+	text-indent: -9999px;
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -27px;
+}
+
+.panel.active .button,
+.filter.active .button,
+.related-video-module .active .button,
+.keyword-container .active .button {
+	background-position: -100px -800px;
+}
+
+.icon-open-close {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -100px -700px;
+	width: 54px;
+	height: 54px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.icon-download {
+	float: right;
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -100px -500px;
+	text-indent: -9999px;
+	width: 54px;
+	height: 54px;
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -27px;
+}
+
+.icon-error {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -100px -900px;
+	width: 54px;
+	height: 54px;
+	display: inline-block;
+	text-indent: -9999px;
+	float: right;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -27px;
+}
+
+.icon-asterisk {
+	text-indent: -9999px;
+	display: inline-block;
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -300px -300px;
+	width: 17px;
+	height: 15px;
+}
+
+.icon-help {
+	text-indent: -9999px;
+	display: inline-block;
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -100px -600px;
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	left: 5px;
+	top: 50%;
+	margin-top: -27px;
+}
+
+.icon-arrow-right {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -200px -800px;
+	width: 8px;
+	height: 15px;
+	display: inline-block;
+	text-indent: -9999px;
+	float: left;
+	position: relative;
+	top: 25px;
+	left: 28px;
+}
+
+.lt-ie8 .icon-arrow-right {
+	top: 0;
+}
+
+.icon-document {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -300px -100px;
+	width: 13px;
+	height: 16px;
+	display: inline-block;
+	text-indent: -9999px;
+	float: left;
+	margin: 24px 13px;
+}
+
+.directory-module .icon-document,
+.download-panel-module .icon-document {
+	margin: 2px 20px 0 0;
+}
+
+.download-panel-module .icon-document {
+	margin-top: 4px;
+}
+
+.icon-delete {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -200px -900px;
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	text-indent: -9999px;
+	float: right;
+	margin: 26px 28px;
+}
+
+.icon-gov {
+	width: 116px;
+	height: 21px;
+	display: inline-block;
+	text-indent: -9999px;
+	background: transparent url('#{$assetspath}/img/gov.png') no-repeat 0 0;
+}
+
+.icon-list,
+.bulleted-list li:before {
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -300px -200px;
+	display: inline-block;
+	float: left;
+	width: 21px;
+	height: 2px;
+	text-indent: -9999px;
+}
+
+.bulleted-list li:before {
+	content: '';
+	position: absolute;
+	top: 29px;
+	left: 0;
+}
+
+.bulleted-list li:first-child:before {
+	top: 14px;
+}

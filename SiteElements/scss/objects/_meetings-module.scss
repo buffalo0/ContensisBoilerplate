@@ -1,0 +1,27 @@
+
+/* $Meetings-Module
+================================================== */
+
+.meetings-list {
+	background: #fff;
+	padding: 0 20px;
+}
+
+.meetings-list li {
+	padding: 13px 0 23px;
+	border-top: 1px solid $border-main;
+	font-family: $font-light;
+}
+
+.meetings-list li:first-child {
+	border-top: none;
+	margin-top: 0;
+}
+
+.meetings-list span {
+	display: block;
+	font-family: $font-regular;
+	font-size: 15 + px;
+	margin-bottom: -10px;
+	line-height: 1.75em;
+}

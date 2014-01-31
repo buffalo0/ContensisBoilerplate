@@ -1,0 +1,69 @@
+
+/* $Navigation
+================================================== */
+
+.nav-title,
+.mobile-nav > a {
+	background: $bg-tab;
+	display: block;
+	padding: 17px 70px 17px 20px;
+	margin-top: -65px;
+	position: relative;
+}
+
+.mobile-nav .nav-title {
+	display: none;
+}
+
+.nav-title {
+	cursor: pointer;
+}
+
+.lt-ie8 .nav-title {
+	margin-top: -63px;
+}
+
+.nav-title .icon-expand,
+.mobile-nav .icon-expand {
+	float: right;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -27px;
+}
+
+.js .js-accordion-content.nav-list:hover,
+.nav-title:hover ~ .nav-list,
+.nav-list:hover {
+	display: block;
+}
+
+.nav-title:hover,
+.mobile-nav > a:hover {
+	padding: 17px 70px 18px 20px;
+	display: block;
+	background: #fff;
+}
+
+.nav-title.active {
+		background: #fff;
+}
+
+.mobile-nav > a {
+	display: none;
+}
+
+.lt-ie8 .nav-list,
+.lt-ie8 .nav-list:hover,
+.lt-ie8 .nav-list:active,
+.lt-ie8 .nav-list:focus {
+	z-index: 1000;
+}
+
+.lt-ie8 .nav {
+	z-index: 100;
+}
+
+.lt-ie8 .header {
+	z-index: 10;
+}

@@ -1,0 +1,120 @@
+
+/* $Lists
+================================================== */
+
+dl, menu, ol, ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+menu, ol, ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Remove vertical spacing from nested lists */
+li > ul,
+li > ol {
+    margin-bottom: 0;
+}
+
+/* Lists style */
+.nav-list {
+	background: #fff;
+	position: absolute;
+}
+
+.nav-list {
+	top: 100%;
+	left: 0;
+	display: none;
+	z-index: 100;
+	overflow: visible;
+}
+
+.tab-list {
+	padding: 15px 0 12px;
+}
+
+.nav-list li {
+	min-height: 100px;
+}
+
+.tab-list li {
+	min-height: 68px;
+}
+
+.nav-list span,
+.tab-list span,
+.tab-list > li > div {
+	margin: 0 20px;
+	display: block;
+	border-top: 1px solid $border-main;
+	padding-top: 20px;
+}
+
+.tab-list span,
+.tab-list > li > div {
+	padding-top: 10px;
+}
+
+.nav-list .first-row,
+.tab-list .first-row {
+	border-top: none;
+}
+
+.tab-list p {
+	margin: 0;
+	font-family: $font-light;
+}
+
+.bulleted-list {
+	/* background: hypen image; */
+}
+
+.bulleted-list li {
+	border-top: none !important;
+	margin-top: 0 !important;
+	width: 100%;
+	max-width: 75%;
+	position: relative;
+}
+
+.bulleted-list h3 {
+	font-family: $font-light;
+}
+
+.bulleted-list .icon-list {
+	padding: 0 10px 0 0;
+	margin-top: 14px;
+}
+
+.bulleted-list p {
+	margin: 0;
+}
+
+.bulleted-list h3,
+.bulleted-list p {
+	padding-left: 35px;
+}
+
+.bullet-list {
+	list-style: disc inside;
+	padding: 5px 0;
+}
+
+.numbered-list {
+	list-style: decimal inside;
+	padding: 10px 0;
+}
+
+.bullet-list li,
+.numbered-list li {
+	border-top: none !important;
+	margin-top: 0 !important;
+	padding: 5px 0 !important;
+}

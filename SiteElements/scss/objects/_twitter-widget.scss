@@ -1,0 +1,74 @@
+
+/* $Twitter-Widget-Module
+================================================== */
+.stream {
+    background-color: #fff!important;
+    width: 100%!important;
+     li{
+        overflow: hidden!important;
+        padding: 11px 20px 2px!important;
+        float: left!important;
+        width: 50%!important;
+        box-sizing: border-box;
+        &:first-child {
+            border-right: 1px solid $border-main!important;
+        }
+
+        .p-nickname {
+            font-family: $font-light!important;
+            @include font-size($h3-size);
+            line-height: 30px!important;
+        }
+
+        .e-entry-title {
+            margin: 1em 0 1em 0!important;
+        }
+
+        a{
+            color: $color-main!important;
+        }
+
+        .link,
+        .profile,
+        .tco-display {
+            padding-bottom: 1px!important;
+            border-bottom: 1px solid $border-underline!important;
+            text-decoration: none!important;
+        }
+
+        .e-entry-title,
+        .profile,
+        .tco-display {
+            line-height: 22px!important;
+        }
+
+        //Areas to hide
+        .header img,
+        .header time,
+        .footer,
+        .p-name {
+            display: none!important;
+        }
+    }
+}
+
+
+/* $Twitter-Module
+==================================================
+
+.twitter-content {
+    margin-left: 1px;
+    background: #fff;
+    overflow: hidden;
+    padding: 11px 20px 2px;
+    height:100%;
+}
+
+.twitter-container:first-child .twitter-content {
+    margin-left: 0;
+}
+
+.twitter-content .username {
+    font-family: $font-light;
+}
+*/

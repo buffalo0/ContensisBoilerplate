@@ -1,0 +1,57 @@
+
+/* $Roadworks-Module
+================================================== */
+
+.roadworks-module .title p {
+	margin: 0;
+}
+
+.roadworks-module > div:first-child {
+	margin-top: 1px;
+}
+
+.roadworks-module > div {
+	margin-top: 1px;
+}
+
+.roadworks-module .roadworks-container {
+	padding: 20px 0;
+	background: #fff;
+	overflow: hidden;
+	margin-top: 1px;
+}
+
+.roadworks-module .roadworks-container p {
+	padding-left: 20px;
+	max-width: 575px;
+	margin: 0;
+	display: block;
+}
+
+.roadworks-module .roadworks-container .error-message p {
+	padding-left: 0;
+}
+
+.roadworks-button a {
+	margin-top: 20px;
+	font-family: $font-regular;
+}
+
+.roadworks-module .roadworks-container h3 {
+	font-family: $font-light;
+	padding: 0 20px;
+}
+
+.roadworks-module .roadworks-container .divider {
+	margin: 20px 20px 0;
+	border-top: 1px solid $border-main;
+	padding-top: 20px;
+}
+
+.roadworks-module .roadworks-container .divider p {
+	padding-left: 0;
+}
+
+.roadworks-module .roadworks-button a {
+	padding: 21px 20px;
+}

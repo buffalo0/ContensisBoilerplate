@@ -1,0 +1,52 @@
+
+/* $Video-Module
+================================================== */
+
+.video-module .video-caption {
+	background: #fff;
+	height: 155px;
+	width: 100%;
+	overflow: auto;
+	margin-top: 1px;
+	padding: 20px 0;
+}
+
+.video-module .video-caption p {
+	display: block;
+	padding-left: 20px;
+	width: 70%;
+}
+
+.related-video-module {
+	position: relative;
+}
+
+.related-video-module .related-video-container li {
+	overflow: hidden;
+}
+
+.related-video-module .related-video-container li > div {
+	margin-left: 1px;
+	background: #fff;
+	padding-bottom: 15px;
+}
+
+.related-video-module .related-video-container .image-wrap {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.related-video-module .related-video-container .icon-play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 61px;
+	width: 61px;
+	background: transparent url('#{$assetspath}/img/spritemap.png') no-repeat -300px -700px;
+	margin: -31px 0 0 -31px;
+}
+
+.related-video-module .related-video-container p {
+	margin: 0;
+	padding: 0 20px;
+}

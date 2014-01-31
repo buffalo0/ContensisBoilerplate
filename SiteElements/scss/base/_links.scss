@@ -1,0 +1,37 @@
+
+/* $Links
+================================================== */
+
+a {
+	color: $color-main;
+}
+
+a,
+a.active,
+.active
+a:hover,
+a:active,
+a:focus {
+	text-decoration: none;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+.underline {
+	border-bottom: 1px solid $border-underline;
+}
+
+.underline.current {
+	border-bottom: none;
+}
+
+a[href$="@"] {
+	word-wrap: break-word;
+}

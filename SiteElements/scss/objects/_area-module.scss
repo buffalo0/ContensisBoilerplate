@@ -1,0 +1,78 @@
+
+/* $Area-Module
+================================================== */
+
+.area-module h3 {
+	font-family: $font-light;
+}
+
+.area-postcode {
+	margin-bottom: 1px;
+	overflow: hidden;
+}
+
+.area-postcode.grid-8 {
+	margin: 10px 0 ;
+}
+
+.area-postcode h3 {
+	padding: 17px 20px;
+	background: #fff;
+}
+
+.area-information div {
+	background: $bg-pay;
+	overflow: hidden;
+	margin: 0 0 1px 1px;
+	padding: 15px 20px 20px;
+	min-height: 146px;
+}
+
+.area-information li:first-child div {
+	margin-left: none;
+}
+
+.area-information h3 {
+	padding-bottom: 3px;
+	min-height: 77px
+}
+
+.area-information p {
+	margin: 20px 0 0;
+}
+
+.area-information span {
+	display: block;
+	background: #fff;
+}
+
+.area-bin span {
+	font-family: $font-light;
+	padding: 10px;
+	line-height: 1.1em
+}
+
+.area-tax span {
+	font-family: $font-bold;
+	padding: 7px 10px;
+	line-height: 1em;
+}
+
+.area-mp span {
+	font-family: $font-light;
+	padding: 5px 10px;
+	line-height: 1.35em;
+}
+
+.area-news a {
+	font-family: $font-light;
+	line-height: 1em;
+}
+
+.area-links li {
+	padding-top: 11px;
+}
+
+.area-links li:first-child {
+	padding-top: 0;
+}

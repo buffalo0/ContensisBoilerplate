@@ -1,0 +1,112 @@
+
+/* $Tabs-Module
+================================================== */
+
+.tab-title {
+	background: #fff;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.tab-title > li {
+	min-height: 305px;
+}
+
+.map-module .tab-title > li {
+	height: 755px;
+}
+
+.tab-title > a {
+	font-family: $font-light;
+	padding: 17px 34px 17px 17px;
+	background: $bg-tab;
+	margin: 1px 0 0 0;
+	display: block;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-left: 1px solid $bg-site;
+	box-sizing: border-box;
+}
+
+.tab-title a.active {
+	background: #fff;
+}
+
+.tab-title > a:first-child {
+	border-left: 0;
+}
+
+.tab-title a .icon-arrow-down {
+	position: absolute;
+	right: 17px;
+	top: 50%;
+	margin-top: -4px;
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+.tabs-map {
+	height: 455px;
+	position: absolute;
+	top: 300px;
+	left: 0;
+}
+
+.no-js .tabs-map {
+	display: none;
+}
+
+.no-js .map-module .tab-title > li {
+	height: auto;
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+}
+
+
+.js-map-point__lat,
+.js-map-point__long,
+.js-map-point__description {
+	display: none !important;
+}
+
+
+/* InfoWindows */
+.tabs-map h1 {
+	font-size: 20 + px;
+	font-family: $font-light;
+}
+
+.tabs-map p {
+	font-size: 15 + px;
+	margin: 5px 0;
+}
+
+.tabs-map a {
+	border-bottom: 1px solid $border-underline;
+}
+
+.tabs-map {
+	display: none;
+}
+
+.active ~ .tabs-map {
+	display: block;
+}
+
+.no-js .tab-list {
+	position: relative;
+	display: block;
+}
+
+.no-js .tab-list li {
+	width: 100%;
+}

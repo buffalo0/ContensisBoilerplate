@@ -1,0 +1,119 @@
+
+/* $Directory-Module
+================================================== */
+
+.directory-module {
+	position: relative;
+}
+
+.directory-module .refine-column > div {
+	margin-right: 0;
+}
+
+.directory-module .refine-column h3 {
+	margin: 0 1px 1px 0;
+	position: relative;
+}
+
+.directory-module .refine-column li:first-child {
+	padding-top: 0;
+}
+
+//Changed by Zengenti - Changed .directory-module .refine-column li a to .directory-module .refine-column li .letter
+.directory-module .refine-column li .letter {
+	padding: 15px 0;
+	margin: 0 1px 1px 0;
+	text-align: center;
+}
+
+//Added by Zengenti
+.directory-module .refine-column li span {
+	display: block;
+}
+
+//Changed by Zengenti - Changed .directory-module .refine-column li a to .directory-module .refine-column li .letter
+.directory-module .refine-column h3,
+.directory-module .refine-column li .letter {
+	background: $bg-title;
+}
+
+//Changed by Zengenti - Changed .directory-module .refine-column li a to .directory-module .refine-column li .letter
+.directory-module .refine-column .letter {
+	font-family: $font-light;
+}
+
+.directory-module .refine-column li a:hover,
+.directory-module .refine-column li a:active,
+.directory-module .refine-column li a:focus {
+	background: $bg-account;
+}
+
+.directory-module .refine-column .active a {
+	background: $bg-button;
+}
+
+.directory-content-title {
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: 1px;
+}
+
+.directory-content h3 {
+	font-family: aktiv_grotesklight, Arial, sans-serif;
+	padding-left: 20px;
+}
+
+.directory-content-title h3 {
+	font-family: $font-bold;
+	line-height: 1.29;
+}
+
+.no-results .directory-content-title h3 {
+	opacity: .1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+	filter: alpha(opacity=10);
+}
+
+.directory-content li {
+	margin-bottom: 1px;
+	background: #fff;
+	padding: 12px 0 17px;
+}
+
+.directory-content li div,
+.directory-content p {
+	margin-left: 20px;
+}
+
+.directory-content .address {
+	width: 240px;
+	float: left;
+}
+
+.directory-content .mail-phone p {
+	margin-top: 0;
+}
+
+.directory-content .mail-phone p:first-child {
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+.directory-content .mail-phone span {
+	padding-left: 28px;
+}
+
+.directory-content .mail-phone p:first-child span {
+	padding-left: 34px;
+}
+
+.directory-content .download {
+	background: $bg-download;
+	padding: 21px 70px 21px 14px;
+	clear: both;
+	position: relative;
+}
+
+.directory-content .download .icon-document {
+	margin-right: 5px;
+}

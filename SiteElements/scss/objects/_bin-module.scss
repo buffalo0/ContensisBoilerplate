@@ -1,0 +1,91 @@
+
+/* $Bin-Module
+================================================== */
+
+.bin-postocde {
+	overflow: hidden;
+}
+
+.bin-information {
+	background: $bg-pay;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.bin-alert {
+	border-bottom: 1px solid $border-main;
+}
+
+.bin-module .bin-information .grid-2 {
+	clear: left;
+}
+
+.bin-alert p {
+	margin: 0;
+	font-family: $font-light;
+	padding: 15px 20px 20px;
+}
+
+.bin-alert,
+.bin-what,
+.bin-when {
+	overflow: hidden;
+}
+
+.bin-what h3,
+.bin-when p {
+	padding: 15px 20px 20px;
+	margin: 0;
+	font-family: $font-light;
+}
+
+.bin-what {
+	margin-top: 20px;
+}
+
+.bin-when {
+	position: relative;
+	background: #fff;
+	margin: 20px 20px 0 0;
+}
+
+.bin-when p:first-child {
+	border-bottom: 1px solid $bg-pay;
+}
+
+.bin-when ul {
+	padding-bottom: 15px;
+}
+
+.bin-when li {
+	margin: 15px 20px 0;
+	border-top: 1px solid $border-main;
+	padding-top: 15px;
+}
+
+.bin-when li:first-child {
+	border-top: none;
+	margin-top: 0;
+}
+
+.bin-information a {
+	float: left;
+	margin-top: 15px;
+}
+
+.bin-information span {
+	float: right;
+	margin: 15px 10px 0 0;
+}
+
+.bin-information .icon-asterisk {
+	margin: 18px 40px 0 0;
+}
+
+.bin-when .icon-asterisk {
+	margin: 3px 0 0 0;
+}
+
+.lt-ie8 .bin-when .icon-asterisk {
+	margin-top: -13px;
+}

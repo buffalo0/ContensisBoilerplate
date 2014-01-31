@@ -1,0 +1,195 @@
+/* $Imports
+================================================== */
+/* global styles and options that are used site wide */
+/* $Vars
+================================================== */
+/**
+ * Set up project-specific variables here which
+ * are then used throughout your build.
+ */
+/* main font coluor */
+/* title module font colour */
+/* light black font colour */
+/* white font colour */
+/* underline border colour */
+/* main border colour */
+/* white border colour */
+/* background grey */
+/* yellow */
+/* main blue */
+/* title grey */
+/* lighter blue */
+/* alert panel yellow */
+/* tax and payment panel pink */
+/* search and resul section sidebar yellow */
+/* download title green */
+/* background logo blue */
+/* background red */
+/* $Mixins
+================================================== */
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ *
+   `@include font-size(10);`
+ *
+ */
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(box-sizing, border-box);`
+ *
+ */
+/**
+ * Create border-radius CSS in one go, e.g.
+ *
+   `@include rounded-corners(value);`
+ *
+ */
+.rounded-top {
+  border-radius: 12px 0px 0px 0px;
+}
+
+/**
+ * Colorize function: reate darken or lighten variant of a declared colour, e.g.:
+ * n value defaults to the declared colour
+ *
+   `background: colorize($color-1,l1);`
+   `color: colorize($bg-1, d1);`
+   `border: 1px solid colorize($color-2, n);`
+ *
+ */
+/**
+ * Media Query Mixin for min/max/min-device and max-device width or height, e.g.:
+ * Base font size needs to be declared
+ *
+   `@include mq(480, max)`
+   `@include mq($tablet, true, min, height)`
+ *
+ */
+/* $Clearfix
+================================================== */
+/* Micro clearfix.
+ * Extend the clearfix class with Sass to avoid the `.cf` class appearing
+ * @extend .cf; */
+.cf {
+  zoom: 1; }
+  .cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+  .cf:after {
+    clear: both;
+}
+
+/* $Custom-Fonts
+================================================== */
+@font-face {
+  font-family: 'aktiv_grotesklight';
+  src: url("/SiteElements/fonts/aktivgroteskstdlt.eot");
+  src: url("/SiteElements/fonts/aktivgroteskstdlt.eot?#iefix") format("embedded-opentype"), url("/SiteElements/fonts/aktivgroteskstdlt.woff") format("woff"), url("/SiteElements/fonts/aktivgroteskstdlt.ttf") format("truetype"), url("/SiteElements/fonts/aktivgroteskstdlt.svg#aktiv_grotesklight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aktiv_groteskbold';
+  src: url("/SiteElements/fonts/aktivgroteskstdbd.eot");
+  src: url("/SiteElements/fonts/aktivgroteskstdbd.eot?#iefix") format("embedded-opentype"), url("/SiteElements/fonts/aktivgroteskstdbd.woff") format("woff"), url("/SiteElements/fonts/aktivgroteskstdbd.ttf") format("truetype"), url("/SiteElements/fonts/aktivgroteskstdbd.svg#aktiv_groteskbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Objects and modules */
+/* $Twitter-Widget-Module
+================================================== */
+.stream {
+  background-color: white !important;
+  width: 100% !important;
+}
+
+.stream li {
+  overflow: hidden !important;
+  padding: 11px 20px 2px !important;
+  float: left !important;
+  width: 50% !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.stream li:first-child {
+  border-right: 1px solid #cbcbcb !important;
+}
+
+.stream li .p-nickname {
+  font-family: aktiv_grotesklight, Arial, sans-serif !important;
+  font-size: 20px;
+  font-size: 1.33333rem;
+  line-height: 1.15;
+  line-height: 30px !important;
+}
+
+.stream li .e-entry-title {
+  margin: 1em 0 1em 0 !important;
+}
+
+.stream li a {
+  color: #333333 !important;
+}
+
+.stream li .link,
+.stream li .profile,
+.stream li .tco-display {
+  padding-bottom: 1px !important;
+  border-bottom: 1px solid #125cd8 !important;
+  text-decoration: none !important;
+}
+
+.stream li .e-entry-title,
+.stream li .profile,
+.stream li .tco-display {
+  line-height: 22px !important;
+}
+
+.stream li .header img,
+.stream li .header time,
+.stream li .footer,
+.stream li .p-name {
+    display: none !important;
+}
+
+/* $Twitter-Module
+==================================================
+
+.twitter-content {
+    margin-left: 1px;
+    background: #fff;
+    overflow: hidden;
+    padding: 11px 20px 2px;
+    height:100%;
+}
+
+.twitter-container:first-child .twitter-content {
+    margin-left: 0;
+}
+
+.twitter-content .username {
+    font-family: $font-light;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1851 @@
+.sys_cms-form-control ul,
+.sys_cms-form-control ul li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.sys_cms-form-control ul,
+.sys_cms-form-control ul li,
+.sys_cms-form-control ul li label,
+.sys_cms-form-control ul li fieldset {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+#FormBuilder {
+  float: left;
+  min-width: 960px;
+  min-height: 1200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #4c4645;
+  background: white;
+}
+
+#FormBuilder #FBTabbedArea {
+  *zoom: 1;
+  float: left;
+  width: 353px;
+  min-height: 1200px;
+  color: #000;
+  background: #eeeeee;
+  padding-top: 3em;
+}
+#FormBuilder #FBTabbedArea:before, #FormBuilder #FBTabbedArea:after {
+  display: table;
+  content: "";
+}
+#FormBuilder #FBTabbedArea:after {
+  clear: both;
+}
+
+#FormBuilder #FBTabbedArea #FBTabs {
+  display: block;
+  width: 348px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  float: left;
+  color: #fff;
+  border-bottom: 3px solid #b0c176;
+  background: #4d4845;
+  margin: 0;
+  padding: 6px 0 0px 5px;
+  list-style-type: none;
+}
+
+#FormBuilder.sys_forms-rules-page #FBTabbedArea #FBTabs {
+  padding-bottom: 1px;
+}
+
+#FormBuilder.sys_forms-rules-page #FBTabbedArea #FBTabs li:hover {
+  height: 25px;
+}
+
+#FormBuilder #FBTabbedArea #FBTabs li {
+  float: left;
+  margin: 0 3px 0 0;
+  padding: 0;
+}
+#FormBuilder #FBTabbedArea #FBTabs li a {
+  display: block;
+  padding: .5em 11px .5em 11px;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+#FormBuilder #FBTabbedArea #FBTabs:after {
+  content: "...";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+}
+
+#FormBuilder #FBTabbedArea #FBTabs li:hover {
+  color: #fff;
+  border: 1px solid white;
+  border-bottom: transparent;
+  margin: 0 3px 0 0;
+  background-color: #787572;
+}
+#FormBuilder #FBTabbedArea #FBTabs li:hover a {
+  display: block;
+  margin: -1px -1px 0;
+}
+
+#FormBuilder #FBTabbedArea #FBTabs li.selected-tab {
+  color: #000;
+  background: white;
+  border: 1px solid #cccccc;
+  border-bottom: transparent;
+}
+#FormBuilder #FBTabbedArea #FBTabs li.selected-tab:hover {
+  margin: 0 3px 0 0;
+  padding: 0;
+}
+
+#FormBuilder #FBTabbedArea #FBTabs li.selected-tab a {
+  color: #064b5b;
+}
+#FormBuilder #FBTabbedArea #FBTabs li.selected-tab a:hover {
+  display: block;
+  outline: medium none;
+  margin: 0;
+  text-decoration: none;
+}
+
+#FormBuilder #FBTabbedArea .fbtabs-content {
+  clear: both;
+  width: 100%;
+  color: #000;
+  position: relative;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content .fbtabs-inner {
+  padding: 15px 5px 15px 15px;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content h3 {
+  float: left;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.75em;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content h3.standard-heading {
+  color: #4a70b1;
+  border-bottom: 1px dotted #4a70b1;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content h3.userdetails-heading {
+  color: #008000;
+  border-bottom: 1px dotted #008000;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content h3.advanced-heading {
+  color: #ac6a0b;
+  border-bottom: 1px dotted #ac6a0b;
+}
+
+#FBAddFields .fbtabs-inner {
+  position: fixed;
+  width: 334px;
+  z-index: 1;
+}
+
+#FBFieldSettings .fbtabs-inner,
+#FBFormSettings .fbtabs-inner {
+  position: relative;
+  z-index: 1;
+  width: 334px;
+}
+
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes {
+  clear: both;
+  margin: 0;
+  padding: 0 0 10px 5px;
+  list-style-type: none;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes:after {
+  content: "...";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+}
+
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li {
+  float: left;
+  width: 146px;
+  margin: 0 12px 12px 0;
+  padding: 0;
+  list-style-type: none;
+  color: #000;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a {
+  display: block;
+  padding: 0.5em 8px 0.5em 32px;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  font-size: 1.2rem;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 5px 1px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a.sys_hover {
+  color: #000;
+  background-color: #d8e1bc;
+}
+
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#TextBox {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/textbox.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Number {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/number.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Multiline {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/multiline.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Checkbox {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/checkboxes.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Radio {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/radiobuttons.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Dropdown {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/dropdown.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#SectionBreak {
+  background: #cfefef;
+  border-color: #72eaec;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#SectionBreak.sys_hover {
+  border-color: #32d2d5;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#PageBreak {
+  background: #ddf0e3;
+  border-color: #aadda8;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#PageBreak.sys_hover {
+  border-color: #7ddc79;
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Name {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/name.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Address {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/postal.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Date {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/date.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Email {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/email.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Time {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/time.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Phone {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/telephone.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Website {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/website.png");
+}
+#FormBuilder #FBTabbedArea .fbtabs-content ul.fb-formtypes li a#Upload {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/upload.png");
+}
+
+.fbfieldsettings {
+  width: 100%;
+  position: relative;
+}
+
+.fbfieldsettings-number {
+  font-size: 1.6em;
+  float: right;
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px 5px 8px;
+  text-align: center;
+  color: #4c4645;
+  background: #d8e1bc;
+  line-height: 1em;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #b0c176;
+}
+
+.fbfieldsettings-icon {
+  float: right;
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px 5px 8px;
+  text-align: center;
+  color: #4c4645;
+  background-color: #d8e1bc;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #b0c176;
+}
+.fbfieldsettings-icon.icon-sl {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/textbox.png");
+}
+.fbfieldsettings-icon.icon-nu {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/number.png");
+}
+.fbfieldsettings-icon.icon-ml {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/multiline.png");
+}
+.fbfieldsettings-icon.icon-cb {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/checkboxes.png");
+}
+.fbfieldsettings-icon.icon-mc {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/radiobuttons.png");
+}
+.fbfieldsettings-icon.icon-dd {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/dropdown.png");
+}
+.fbfieldsettings-icon.icon-sb {
+  background: #cfefef;
+  border-color: #72eaec;
+}
+.fbfieldsettings-icon.icon-pb {
+  background: #ddf0e3;
+  border-color: #aadda8;
+}
+.fbfieldsettings-icon.icon-name {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/name.png");
+}
+.fbfieldsettings-icon.icon-address {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/postal.png");
+}
+.fbfieldsettings-icon.icon-date {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/date.png");
+}
+.fbfieldsettings-icon.icon-email {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/email.png");
+}
+.fbfieldsettings-icon.icon-time {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/time.png");
+}
+.fbfieldsettings-icon.icon-phone {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/telephone.png");
+}
+.fbfieldsettings-icon.icon-website {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/website.png");
+}
+.fbfieldsettings-icon.icon-upload {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/upload.png");
+}
+
+.fbsetting {
+  width: 330px;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.fbsettingleft,
+.fbsettingright {
+  clear: both;
+  float: left;
+  width: 156px;
+  margin: 0 10px 10px 0;
+}
+
+.fbsettingright {
+  clear: none;
+  margin-right: 0;
+}
+
+.fbsettingleft-hi,
+.fbsettingright-hi {
+  clear: both;
+  float: left;
+  width: 140px;
+  min-height: 100px;
+  margin: 0 10px 10px 0;
+  padding: 5px 8px;
+  background: #dddddd;
+  border-radius: 3px;
+}
+
+.fbsettingright-hi {
+  clear: none;
+  margin-right: 0;
+}
+
+.fbsetting-hi {
+  float: left;
+  clear: both;
+  width: 306px;
+  clear: both;
+  padding: 5px 8px;
+  margin: 0 0 10px 0;
+  background: #dddddd;
+  border-radius: 3px;
+}
+
+.fbsetting textarea,
+.fbsetting select {
+  padding: .2em 2px;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 1em;
+  font-family: Arial,Helvetica,Sans-Serif;
+}
+
+.fbsetting select {
+  padding: 6px 6px;
+}
+
+.sys_function-editpagerules {
+  margin-left: 20px;
+}
+
+.fbsetting label,
+.fbsetting span.fb-dummylabel {
+  display: block;
+  clear: both;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 4px 0;
+}
+.fbsetting label a,
+.fbsetting span.fb-dummylabel a {
+  color: #0059b2;
+  text-decoration: none;
+}
+
+.fbsetting label a.fb-tooltip,
+.fbsetting span.fb-dummylabel a.fb-tooltip {
+  cursor: help;
+}
+
+.fbsetting label:focus,
+.fbsetting label:active {
+  outline: #000 dotted 1px;
+}
+
+.fbsetting textarea {
+  width: 316px;
+  clear: both;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  margin-bottom: .4em;
+}
+
+.fbsetting select {
+  width: 216px;
+  margin-bottom: .4em;
+}
+
+.fbsettingleft textarea,
+.fbsettingright textarea {
+  width: 156px;
+}
+
+.fbsettingleft input,
+.fbsettingright input {
+  width: 156px;
+}
+
+.fbsettingleft select,
+.fbsettingright select {
+  width: 156px;
+}
+
+.fbsettingleft-hi textarea,
+.fbsettingright-hi textarea {
+  width: 134px;
+}
+
+.fbsettingleft-hi input,
+.fbsettingright-hi input {
+  width: 134px;
+}
+
+.fbsettingleft-hi select,
+.fbsettingright-hi select {
+  width: 140px;
+}
+
+.fbsetting-hi textarea {
+  width: 295px;
+  clear: both;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  margin-bottom: .4em;
+}
+
+.fbsetting-hi input {
+  width: 295px;
+  margin-bottom: .4em;
+}
+
+.fbsetting-hi select {
+  width: 295px;
+  margin-bottom: .4em;
+}
+
+.fbsetting .fb-checkbox,
+.fbsetting .fb-radiobtn {
+  float: left;
+  width: 100%;
+  clear: both;
+  padding: 0 0 2px 0;
+}
+
+.fbsetting .fb-checkbox input,
+.fbsetting .fb-radiobtn input {
+  float: left;
+  width: 13px;
+  height: 13px;
+  border: 0 none;
+  overflow: hidden;
+  margin: 0 5px 5px 0;
+  padding: 0;
+}
+
+.fbsetting .fb-checkbox label,
+.fbsetting .fb-radiobtn label {
+  clear: none;
+  float: left;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: .9em;
+}
+
+.fbsetting .fbsubcol {
+  float: left;
+  margin: 0 10px 2px 0;
+}
+.fbsetting .fbsubcol label {
+  font-weight: 400;
+}
+.fbsetting .fbsubcol input {
+  width: 50px;
+}
+.fbsetting .fbsubcol select {
+  width: 100px;
+}
+
+.fbsetting ul.fb-choices {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.fbsetting ul.fb-choices li {
+  float: left;
+  width: 100%;
+  clear: both;
+  padding: 0 0 2px 0;
+}
+.fbsetting ul.fb-choices li input {
+  float: left;
+  width: 200px;
+  clear: none;
+}
+.fbsetting ul.fb-choices li input.fb-choice-radio {
+  float: left;
+  width: 13px;
+  height: 13px;
+  border: 0 none;
+  overflow: hidden;
+  margin: 4px 5px 5px 0;
+  padding: 0;
+}
+.fbsetting ul.fb-choices li .fb-choice-btns a {
+  float: left;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  margin: 0 5px 0 0;
+  text-indent: -999px;
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+}
+.fbsetting ul.fb-choices li .fb-choice-btns a.addchoice-btn {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/greenplus.png");
+}
+.fbsetting ul.fb-choices li .fb-choice-btns a.deletechoice-btn {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/redminus.png");
+}
+
+.fbsetting.first-fbsetting {
+  clear: none !important;
+  width: 225px;
+}
+.fbsetting.first-fbsetting label,
+.fbsetting.first-fbsetting span.fb-dummylabel {
+  clear: none !important;
+}
+.fbsetting.first-fbsetting textarea,
+.fbsetting.first-fbsetting input {
+  width: 218px;
+}
+
+.fbsetting .fbsetting-date {
+  position: relative;
+}
+.fbsetting .fbsetting-date input {
+  width: 290px;
+}
+.fbsetting .fbsetting-date img {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+
+.fbsetting-btns ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.fbsetting-btns ul li {
+  float: left;
+  width: auto;
+  margin: 0 10px 10px 0;
+  padding: 0;
+  list-style-type: none;
+  color: #4c4645;
+  background: white url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/buttonbackground.png") 0 100% repeat-x;
+}
+.fbsetting-btns ul li a {
+  display: block;
+  padding: .4em 8px .4em 26px;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  border: 1px solid #d4d4d4;
+  border-top-color: #d4d4d4;
+  border-right-color: #a5a5a5;
+  border-bottom-color: #9c9c9c;
+  border-left-color: #c5c5c5;
+}
+.fbsetting-btns ul li a#DuplicateBtn {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/greenplus.png");
+}
+.fbsetting-btns ul li a#DeleteBtn {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/redminus.png");
+}
+.fbsetting-btns ul li a#AddFieldBtn {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/addfield.png");
+}
+.fbsetting-btns ul li a#PopulateBtn {
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/populate.png") no-repeat scroll 4px 5px transparent;
+}
+
+.fb-tooltipshow {
+  width: 200px;
+  min-height: 110px;
+  padding: 10px;
+  background: #eeeeee;
+  border: 5px solid #cccccc;
+  color: #4c4c4c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  z-index: 2000;
+}
+
+.fb-tooltipshow .fb-tooltiphead {
+  font-weight: bold;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  position: relative;
+}
+.fb-tooltipshow .fb-tooltiphead a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: transparent url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/cross.png") 0 0 no-repeat;
+  text-indent: -999px;
+}
+.fb-tooltipshow .fb-tooltiphead a:hover {
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+#FormBuilder #FBMainArea {
+  float: left;
+  width: 606px;
+}
+
+#FormBuilder #formwrapperJS {
+  padding: 20px 30px;
+}
+
+#FormBuilder #formwrapperJS #btnSubmitForm {
+  margin: 15px;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body {
+  font-size: small;
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  margin-bottom: 1.5em;
+}
+.sys_cms-form-control ul.sys_cms-form-body:after {
+  content: "...";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item {
+  margin: 0 0 5px 0;
+  padding: 6px 0 8px 1%;
+  position: relative;
+  list-style-type: none !important;
+  list-style-image: none !important;
+  background: none;
+  background-image: none;
+  color: #333;
+  font-size: small;
+  width: 99%;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li:after {
+  content: "...";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item,
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item * {
+  cursor: pointer !important;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li .sys_fieldlabel {
+  display: block;
+  font-weight: bold;
+  padding-top: .2em;
+  padding-bottom: .3em;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li div.sys_fieldcontent {
+  float: left;
+  width: 100%;
+}
+
+.sys_cms-form-control.sys_labels-left .sys_fieldlabel {
+  float: left;
+  width: 31%;
+  padding-right: 3%;
+}
+
+.sys_cms-form-control.sys_labels-left ul.sys_cms-form-body li div.sys_fieldcontent {
+  float: left;
+  width: 65%;
+}
+
+.sys_cms-form-control.sys_labels-right .sys_fieldlabel {
+  float: left;
+  width: 31%;
+  padding: 0 3% 0 0;
+  text-align: right;
+}
+
+.sys_cms-form-control.sys_labels-right ul.sys_cms-form-body li div.sys_fieldcontent {
+  float: left;
+  width: 65%;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li .sys_instructions {
+  display: none;
+  top: 0;
+  left: 100%;
+  position: absolute;
+  border: 1px solid #cfd6d7;
+  color: #474c50;
+  background: #eceff0;
+  margin-top: 5px;
+  margin-left: 10px;
+  padding: 6px 8px;
+  width: 45%;
+  font-size: 0.8em;
+}
+
+.sys_cms-form-control.sys_showinstructions.sys_labels-left ul.sys_cms-form-body li .sys_instructions,
+.sys_cms-form-control.sys_showinstructions.sys_labels-right ul.sys_cms-form-body li .sys_instructions {
+  width: 25%;
+}
+
+.sys_cms-form-control.sys_showinstructions ul.sys_cms-form-body li.sys_cms-form-item {
+  width: 64%;
+}
+
+.sys_cms-form-control.sys_showinstructions.sys_labels-left ul.sys_cms-form-body li.sys_cms-form-item,
+.sys_cms-form-control.sys_showinstructions.sys_labels-right ul.sys_cms-form-body li.sys_cms-form-item {
+  width: 74%;
+}
+
+.sys_cms-form-control.sys_showinstructions ul.sys_cms-form-body li.sys_cms-form-item .sys_instructions {
+  display: block;
+}
+
+#FormBuilder #formwrapperJS ul.sys_cms-form-body .error,
+#FormBuilder #formwrapperJS ul.sys_cms-form-body .sys_cms-form-error {
+  color: #a33f49;
+  margin: 0;
+  padding: 0;
+  font-size: .9em;
+  font-weight: bold;
+}
+
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li {
+  border: 1px solid #fff;
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li:hover {
+  border: 1px dashed #ccc;
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li.fb-editing {
+  border: 2px solid solid #b0c176 !important;
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li.fb-editing img.fb-arrow {
+  display: block;
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li .fb-arrow {
+  position: absolute;
+  top: 0;
+  left: -42px;
+  width: 30px;
+  height: 34px;
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/arrow.png") 0 0 no-repeat;
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li .fbfield-btns {
+  display: none;
+}
+
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li.fb-editing .fbfield-btns {
+  display: block;
+  position: absolute;
+  right: 5px;
+  bottom: -5px;
+  width: 50px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li.fb-editing .fbfield-btns a {
+  float: left;
+  display: block;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  text-indent: -999px;
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li.fb-editing .fbfield-btns a.duplicate-btn {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/greenplus.png");
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li.fb-editing .fbfield-btns a.delete-btn {
+  background-image: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/redminus.png");
+}
+#FormBuilder #formwrapperJS ul.sys_cms-form-body li.fb-editing .fbfield-btns span {
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+#FormHelperText {
+  background: #d0d6df;
+  border: 1px solid #5b6e88;
+  margin: 1.5em 0;
+  padding: 1.5em 20px;
+}
+#FormHelperText h2 {
+  margin-bottom: 0.75em;
+}
+#FormHelperText #FormHelperTextInner p {
+  margin-bottom: 0;
+}
+
+.sys_noformelements {
+  min-height: 220px;
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/addelementshere.png") 50% 50% no-repeat;
+}
+
+.fbformsettings {
+  width: 100%;
+  position: relative;
+}
+
+.sortableHelper {
+  background-color: #e5fafe;
+  z-index: 1;
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.sys_form-preview {
+  width: 640px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.sys_form-preview-header {
+  padding: 0.75em 10px;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.sys_form-preview-inner {
+  padding: 20px 15px 0 15px;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li input,
+.sys_cms-form-control ul.sys_cms-form-body li select,
+.sys_cms-form-control ul.sys_cms-form-body li textarea,
+.sys_cms-form-control ul.sys_cms-form-body li label,
+.sys_cms-form-control ul.sys_cms-form-body li .sys_legend,
+.sys_cms-form-control ul.sys_cms-form-body li .sys_fieldlabel {
+  color: #333;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  padding: auto;
+}
+.sys_cms-form-control ul.sys_cms-form-body li input,
+.sys_cms-form-control ul.sys_cms-form-body li textarea {
+  padding: 2px 0;
+}
+
+.sys_cms-form-control input.sys_small,
+.sys_cms-form-control select.sys_small {
+  width: 25%;
+}
+
+.sys_cms-form-control input.sys_medium,
+.sys_cms-form-control select.sys_medium {
+  width: 50%;
+}
+
+.sys_cms-form-control input.sys_large,
+.sys_cms-form-control select.sys_large {
+  width: 97.6%;
+}
+
+.sys_cms-form-control textarea.sys_small,
+.sys_cms-form-control textarea.sys_medium,
+.sys_cms-form-control textarea.sys_large {
+  width: 98%;
+}
+
+.sys_cms-form-control textarea.sys_small {
+  height: 5em;
+}
+
+.sys_cms-form-control textarea.sys_medium {
+  height: 12em;
+}
+
+.sys_cms-form-control textarea.sys_large {
+  height: 22em;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li div label {
+  display: block;
+  font-size: 90%;
+  color: #333;
+  padding: .2em 0 .5em 0;
+}
+.sys_cms-form-control ul.sys_cms-form-body li div label.error, .sys_cms-form-control ul.sys_cms-form-body li div label.sys_cms-form-error {
+  color: #a33f49;
+  margin: 0;
+  padding: 0;
+  font-size: .9em;
+  font-weight: bold;
+}
+
+#btnSubmitForm {
+  margin: 15px;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sectionbreak {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sectionbreak .sys_sectionbreak-header {
+  float: left;
+  width: 100%;
+  cursor: text;
+  color: #333;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sectionbreak .sys_sectionbreak-text {
+  float: left;
+  width: 100%;
+  cursor: text;
+  color: #333;
+  font-size: .9em;
+  margin: 0;
+  padding: 0;
+}
+
+/* Form Row - Page Break */
+.sys_cms-form-control ul.sys_cms-form-body li.sys_pagebreak {
+  padding-top: 30px;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_pagebreak div.sys_pagebreak-indicator {
+  font-family: "Lucida Console", Arial, Sans-Serif;
+  clear: both;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_pagebreak div.sys_pagebreak-indicator h3 {
+  font-size: 14px;
+  margin: 0;
+  padding: 15px 0 0 0;
+  border-bottom: 3px dashed #0893ab;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_pagebreak div.sys_pagebreak-indicator h3 span {
+  display: block;
+  bottom: 0;
+  left: 50%;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 0 0 -55px;
+  position: absolute;
+  text-align: center;
+  width: 110px;
+  background: #fff;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_name div.sys_namesubelement {
+  float: left;
+  width: 48%;
+  margin: 0 2% 0 0;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_name div.sys_namesubelement input {
+  width: 96%;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_name div.sys_lastnamesubelement {
+  width: 49%;
+  margin-right: 0 !important;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_name div.sys_lastnamesubelement input {
+  width: 96%;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_date input {
+  float: left;
+  margin-right: 4px;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_date img {
+  float: left;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_checkbox input,
+.sys_cms-form-control ul.sys_cms-form-body li.sys_radio input {
+  float: left;
+  width: 13px;
+  height: 13px;
+  display: block;
+  padding: 0;
+  margin: 4px 4px 0 0;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_checkbox input[disabled],
+.sys_cms-form-control ul.sys_cms-form-body li.sys_radio input[disabled] {
+  color: #555;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_checkbox label,
+.sys_cms-form-control ul.sys_cms-form-body li.sys_radio label {
+  cursor: pointer;
+  float: left;
+  width: 74%;
+  line-height: 150%;
+  padding: .2em 0;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li span.sys_choices_other {
+  clear: both;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li span.sys_choices_other label.sys_otherlabel {
+  float: none;
+  display: block;
+  clear: both;
+  width: 120px;
+  height: auto;
+  padding: .2em 0;
+  margin: 0;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li span.sys_choices_other input.sys_medium {
+  float: none;
+  display: block;
+  clear: both;
+  width: 120px;
+  height: auto;
+  display: inherit;
+  padding: 2px 0;
+  margin: 0;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_time div.sys_timesubelement {
+  float: left;
+  width: 44px;
+  margin: 0 4px 0 0;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_time div.sys_timesubelement input {
+  width: 38px;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_address label {
+  padding-top: .7em;
+  padding-bottom: .15em;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sidebyside div span {
+  width: auto;
+  float: left;
+  white-space: nowrap;
+  padding-right: 8px;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sidebyside div span input {
+  width: auto;
+  float: none;
+  display: inline;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_sidebyside div span label {
+  width: auto;
+  float: none;
+  display: inline;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_onecolumn div span {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_onecolumn div span.sys_boxclearer {
+  clear: left;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_twocolumns div span {
+  width: 48%;
+  margin: 0 5px 0 0;
+  float: left;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_twocolumns div span.sys_boxclearer {
+  clear: left;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_threecolumns div span {
+  float: left;
+  width: 30%;
+  margin: 0 5px 0 0;
+}
+.sys_cms-form-control ul.sys_cms-form-body li.sys_threecolumns div span.sys_boxclearer {
+  clear: left;
+}
+
+.sys_cms-form-control #recaptcha_area {
+  margin-left: 16px;
+}
+
+.sys_cms-form-control #captchaStatus {
+  margin-left: 16px;
+  margin-top: 8px;
+  color: #a33f49;
+  font-weight: bold;
+}
+
+.sys_form-progress {
+  position: absolute;
+  z-index: 9999;
+  width: 150px;
+  height: 18px;
+  color: #fff;
+  padding: 12px;
+  background: #3f4245;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 1px 10px 0 0;
+  border: 3px solid #7c7f82;
+  border-radius: 5px;
+}
+
+.sys_form-progress {
+  background: #3f4245 url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/progress.gif") 9px 9px no-repeat;
+}
+
+.sys_cms-form-control .errormsg {
+  font-size: 13px;
+  padding: 15px;
+}
+
+.sys_cms-form-confirmation-content {
+  font-size: 150%;
+  text-align: center;
+  padding: 20px;
+}
+
+/*START OF NEW FORM STYLES*/
+#FormBuilder.sys_forms-rules-page {
+  min-width: 1010px;
+}
+
+#FormBuilder.sys_forms-rules-page #FBMainArea {
+  padding-top: 96px;
+  width: 657px;
+}
+
+/*Edit Page Rules Button*/
+select#FormSettingLabelSel {
+  float: left;
+  width: 154px;
+}
+
+ul.sys_form-rules-tabs {
+  background: #4d4845;
+  margin: 0 0 0 1px;
+  padding: 9px 0 0 10px;
+  display: block;
+  float: left;
+  min-width: 641px;
+  width: 651px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 353px;
+  z-index: 5;
+  border-bottom: 3px solid #b0c176;
+  display: none;
+}
+ul.sys_form-rules-tabs:after {
+  content: "...";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+}
+ul.sys_form-rules-tabs li {
+  float: left;
+  margin: 0 3px 0 0;
+  padding: 0;
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/tabbackground.png") no-repeat scroll 12px 9px transparent;
+  list-style: none;
+  outline: none;
+}
+ul.sys_form-rules-tabs li:hover {
+  color: #fff;
+  border: 1px solid #0893ab;
+  border-bottom: 0 none;
+  margin: 0 3px 0 0;
+  background: #f5fdff url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/arrowright.png") 11px 8px no-repeat;
+}
+ul.sys_form-rules-tabs li a {
+  display: block;
+  padding: .5em 10px .5em 27px;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+ul.sys_form-rules-tabs li:hover a {
+  display: block;
+  margin: -1px -1px 0;
+  color: #000000;
+}
+
+ul.sys_form-rules-tabs li.selected-tab {
+  color: #000;
+  background: white url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/rulearrow.png") 8px 0.8em no-repeat;
+  border: 1px solid #0893ab;
+  border-bottom: 0 none;
+  height: 27px;
+}
+ul.sys_form-rules-tabs li.selected-tab:hover {
+  margin: 0 3px 0 0;
+  padding: 0;
+}
+ul.sys_form-rules-tabs li.selected-tab a {
+  color: #000000;
+  margin: -1px -1px 0;
+}
+ul.sys_form-rules-tabs li.selected-tab a:hover {
+  display: block;
+  outline: medium none;
+  padding: 0.5em 10px 0.5em 27px;
+  text-decoration: none;
+}
+
+/*Top Section Styles*/
+.sys_form-pagerules-topsection {
+  background: #dddddd;
+  margin: 0 0 0 1px;
+  padding: 50px 20px 20px 20px;
+  float: left;
+  width: 621px;
+  position: fixed;
+  left: 353px;
+  z-index: 2;
+  display: none;
+}
+.sys_form-pagerules-topsection input.sys_button {
+  float: left;
+  cursor: pointer;
+}
+.sys_form-pagerules-topsection input.sys_function-editform {
+  margin: 0 61px 0 0;
+}
+.sys_form-pagerules-topsection span.sys_rulestotal {
+  margin-right: 54px;
+  padding-top: 7px;
+  float: left;
+  color: #333333;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.sys_form-pagerules-topsection span.sys_enablerules {
+  padding-top: 11px;
+  float: left;
+}
+.sys_form-pagerules-topsection input.sys_function-addrule {
+  float: right;
+}
+
+.sys_rule-logicaloperator {
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/rulebullets.png") no-repeat;
+  margin: -4px 0 0 0;
+  padding-top: 3px;
+  height: 16px;
+  width: 27px;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.72em;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: normal;
+  *display: inline;
+  *zoom: 1;
+  *vertical-align: top;
+}
+
+:root .sys_rule-logicaloperator {
+  margin: -3px 0 0 0;
+}
+
+.sys_or-logicaloperator {
+  background-position: -60px -5px;
+}
+
+.sys_and-logicaloperator {
+  background-position: -87px -5px;
+  padding-left: 1px;
+  width: 26px;
+}
+
+ul.sys_cms-form-rules-body li {
+  background: #d8e1bc;
+  margin-bottom: 1.5em;
+  padding: 10px;
+  float: left;
+  width: 582px;
+  min-height: 30px;
+  height: auto !important;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 1.25em;
+  line-height: 28px;
+}
+
+ul.sys_cms-form-rules-body li span.sys_rulenumber {
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/rulebullets.png") no-repeat;
+  margin: 1px 27px 0 0;
+  padding-top: 3px;
+  width: 30px;
+  height: 27px;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  font-family: Trebuchet MS, Arial, Helvetica, Verdana, sans-serif;
+  font-size: 1.47em;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+ul.sys_cms-form-rules-body li span.sys_ruledescription {
+  padding-top: 5px;
+  float: left;
+  width: 401px;
+  font-size: 0.93em;
+}
+
+ul.sys_cms-form-rules-body li a {
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/formrules.png") no-repeat 0 0;
+  margin: 0px 6px 0 0;
+  float: right;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+ul.sys_cms-form-rules-body li a.sys_editrule {
+  background-position: -38px 0;
+}
+
+ul.sys_cms-form-rules-body li a.sys_deleterule {
+  background-position: -76px 0;
+  margin-right: 12px;
+}
+
+.sys_cms-form-add-rule-body {
+  background: #dddddd;
+  padding: 13px 0px 14px 15px;
+  float: left;
+  width: 582px;
+  font-size: 1.08em;
+  border-radius: 5px;
+  display: none;
+}
+.sys_cms-form-add-rule-body .sys_rulenumber {
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/rulebullets.png") no-repeat -30px 0px;
+  margin-right: 17px;
+  padding-top: 4px;
+  width: 30px;
+  height: 26px;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  font-family: Trebuchet MS, Arial, Helvetica, Verdana, sans-serif;
+  font-size: 1.69em;
+  font-weight: bold;
+  line-height: 1em;
+}
+.sys_cms-form-add-rule-body .sys_ruledescription {
+  background: #777777;
+  margin-bottom: 1.5em;
+  padding: 10px;
+  float: left;
+  width: 505px;
+  color: white;
+  border-radius: 3px;
+}
+
+.sys_rule-creator {
+  float: left;
+  width: 571px;
+}
+
+.sys_rule-creator .sys_rule-line {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  display: block;
+  float: left;
+  width: 562px;
+}
+
+.sys_rule-creator .sys_rule-line.sys_first,
+.sys_rule-creator .sys_rule-line.sys_last {
+  padding: 0;
+}
+
+.sys_rule-creator .sys_rule-line a {
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/formrules.png") no-repeat 0 0;
+  float: left;
+  height: 26px;
+  width: 21px;
+  line-height: 0;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+.sys_rule-creator .sys_rule-line a.sys_add-newstatement {
+  background-position: -131px -3px;
+  margin-right: 10px;
+}
+
+.sys_rule-creator .sys_rule-line a.sys_removestatement {
+  background-position: -108px -3px;
+  margin-right: 2px;
+}
+
+.sys_rule-creator .sys_rule-line-text,
+.sys_rule-creator .sys_rule-line-text-jump {
+  margin-right: 9px;
+  float: left;
+  color: #4c4645;
+  font-weight: bold;
+}
+
+.sys_rule-creator .sys_rule-line-text-jump {
+  float: right;
+}
+
+.sys_rule-creator span.sys_option-select,
+.sys_rule-creator span.sys_option-checkbox,
+.sys_rule-creator input.sys_rule-value {
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/droparrow.png") no-repeat white 100% 0px;
+  margin-right: 9px;
+  padding-left: 5px;
+  float: left;
+  width: 170px;
+  font-weight: bold;
+  border: 1px solid #999999;
+  line-height: 21px;
+  position: relative;
+  cursor: pointer;
+}
+
+.sys_rule-creator span.sys_rule-variable {
+  padding-right: 82px;
+  width: 140px;
+}
+
+.sys_rule-creator input.sys_rule-value {
+  background-image: none;
+  line-height: normal;
+  outline: medium none;
+  padding: 2px 0 3px 8px;
+}
+
+.sys_rule-creator span.sys_rule-value,
+.sys_rule-creator input.sys_rule-value {
+  padding-right: 13px;
+  word-wrap: break-word;
+}
+
+.sys_rule-creator span.sys_option-checkbox {
+  background: none;
+  border: none;
+}
+
+.sys_rule-creator span.sys_option-select span.sys_option-select-type,
+.system_contextMenu.sys_forms-rules ul li a span.sys_option-select-type {
+  background: #cccccc;
+  padding: 2px 4px 0 4px;
+  float: right;
+  height: 13px;
+  text-align: center;
+  font-family: Verdana, Arial, helvetica, Sans-Serif;
+  font-size: 0.77em;
+  line-height: 10px;
+  border-radius: 3px;
+  position: absolute;
+  top: 3px;
+  right: 27px;
+}
+
+.sys_rule-creator span.sys_rule-type {
+  padding-right: 25px;
+  width: auto;
+}
+
+.sys_rule-creator span.sys_rule-logical-operator {
+  width: 64px;
+}
+
+.sys_rule-creator span.sys_rule-page {
+  margin-right: 51px;
+  float: right;
+}
+
+.sys_rule-creator a {
+  float: left;
+  line-height: 0;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+.sys_form-pagerules-topsection a:hover {
+  text-decoration: none;
+}
+
+.sys_rule-creator input.sys_function-setrule {
+  display: block;
+  clear: both;
+  float: right;
+  cursor: pointer;
+}
+
+.sys_rule-creator .sys_positive {
+  color: #59a33f;
+}
+
+.sys_rule-creator .sys_neutral {
+  color: #c7775b;
+}
+
+.sys_rule-creator .sys_negative {
+  color: #a33f49;
+}
+
+.system_contextMenu.sys_forms-rules {
+  background-image: none;
+  padding: 9px 10px 15px 10px;
+  color: #333333;
+  border: 4px solid #999999;
+  border-radius: 12px;
+  white-space: normal;
+  background-color: #ffffff;
+}
+
+.system_contextMenu.sys_forms-rules .sys_form-page-title {
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  float: left;
+  width: 254px;
+  font-size: 1.73em;
+  border-bottom: 1px solid #cccccc;
+}
+
+.system_contextMenu.sys_forms-rules ul {
+  padding-bottom: 15px;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+.system_contextMenu.sys_forms-rules ul li a {
+  padding: 5px 77px 5px 9px;
+  display: block;
+  clear: both;
+  max-width: 205px;
+  width: auto;
+  color: #333333;
+  font-size: 1.27em;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+
+.system_contextMenu.sys_forms-rules ul li a:hover,
+.system_contextMenu.sys_forms-rules ul li a.sys_selected {
+  background: #3f3f3f;
+  color: #ffffff;
+}
+
+.system_contextMenu.sys_forms-rules ul li a span.sys_option-select-type {
+  color: #333333 !important;
+  right: 9px;
+  top: 6px;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control button {
+  float: left;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item .sys_exisiting-pagerules-info {
+  float: right !important;
+  font-weight: bold;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item .sys_exisiting-pagerules-info span,
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_cms-form-body li.sys_cms-form-item .sys_exisiting-pagerules-info a {
+  margin-right: 6px;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_exisiting-pagerules-list {
+  margin: 0 0 1.5em 0;
+  background: #d8e1bc;
+  padding: 14px 0 6px 15px;
+  float: left;
+  width: 504px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_exisiting-pagerules-list li {
+  padding: 0 0 8px;
+  float: left;
+  width: 470px;
+  border: none;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_exisiting-pagerules-list li.sys_close-ruleslist {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 19px;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_exisiting-pagerules-list li span.sys_rulenumber {
+  background: url("/cmsengine/themes/ContensisUI/R8UI/formbuilder/rulebullets.png") no-repeat -114px -5px;
+  margin: 0 8px 0 0;
+  padding: 1px 0 0 0;
+  float: left;
+  width: 20px;
+  height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_exisiting-pagerules-list li span.sys_ruledescription {
+  float: left;
+  width: 442px;
+}
+
+#FormBuilder #formwrapperJS.sys_cms-form-control ul.sys_exisiting-pagerules-list li span.sys_rule-logicaloperator {
+  background: none;
+  padding: 0;
+  width: auto;
+  height: auto;
+  color: #333333;
+  font-size: 1.15em;
+  vertical-align: baseline;
+}
+
+.sys_cms-form-control ul#formpagerules {
+  float: left;
+}
+
+ul.sys_cms-form-rules-body li span.sys_ruledescription b {
+  font-size: 0.87em;
+}
+
+.sys_cms-form-add-rule-body span.sys_rule-logicaloperator {
+  font-size: 0.78em;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_time select {
+  padding: 2px 2px 2px 0;
+  min-height: 20px;
+}
+
+.sys_legend {
+  font-weight: bold;
+}
+
+.sys_cms-form-item.sys_radio.sys_sidebyside .sys_legend,
+.sys_cms-form-item.sys_checkbox.sys_sidebyside .sys_legend {
+  float: left;
+  width: 30%;
+}
+
+.sys_cms-form-item.sys_radio.sys_sidebyside div.sys_fieldcontent span,
+.sys_cms-form-item.sys_checkbox.sys_sidebyside div.sys_fieldcontent span {
+  padding-left: 20px;
+}
+
+.sys_labels-left .sys_cms-form-body li.sys_cms-form-item.sys_time .sys_legend {
+  float: left;
+  width: 30%;
+}
+
+.sys_labels-left .sys_cms-form-body li.sys_cms-form-item.sys_time .sys_fieldcontent {
+  padding-left: 20px;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li span.sys_required {
+  margin-left: 4px;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li div.sys_legend span.sys_required {
+  position: static;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
+  float: none;
+}
+
+.sys_labels-top .sys_cms-form-item.sys_radio.sys_sidebyside .sys_legend,
+.sys_labels-top .sys_cms-form-item.sys_checkbox.sys_sidebyside .sys_legend {
+  width: 100%;
+}
+
+.sys_labels-top .sys_cms-form-item.sys_radio.sys_sidebyside div.sys_fieldcontent span,
+.sys_labels-top .sys_cms-form-item.sys_checkbox.sys_sidebyside div.sys_fieldcontent span {
+  padding-left: 0px;
+}
+
+.sys_labels-left .sys_legend {
+  float: left;
+  width: 31%;
+  padding-right: 1.5%;
+}
+
+.sys_labels-left .sys_cms-form-item.sys_radio.sys_sidebyside div.sys_fieldcontent span,
+.sys_labels-left .sys_cms-form-item.sys_checkbox.sys_sidebyside div.sys_fieldcontent span {
+  padding-left: 10px;
+}
+
+.sys_labels-left .sys_cms-form-body li.sys_cms-form-item.sys_time .sys_fieldcontent {
+  padding-left: 10px;
+}
+
+.sys_labels-right .sys_legend {
+  float: left;
+  text-align: right;
+  width: 29.5%;
+  padding-right: 3%;
+}
+
+.sys_labels-right .sys_cms-form-item.sys_radio.sys_sidebyside div.sys_fieldcontent span,
+.sys_labels-right .sys_cms-form-item.sys_checkbox.sys_sidebyside div.sys_fieldcontent span {
+  padding-left: 0;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_checkbox.sys_sidebyside div span input {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+
+.sys_cms-form-control ul.sys_cms-form-body li.sys_checkbox.sys_sidebyside div span label {
+  display: block;
+  width: auto;
+  white-space: normal;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

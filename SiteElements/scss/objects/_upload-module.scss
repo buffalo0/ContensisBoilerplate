@@ -1,0 +1,77 @@
+
+/* $Upload-Module
+================================================== */
+
+.upload-module .upload-container {
+	overflow: hidden;
+	background: #fff;
+	padding: 20px;
+}
+
+.upload-module .upload-container p {
+	margin: 0;
+	padding: 0;
+}
+
+.upload-module .upload-container > p {
+	padding-top: 15px;
+	font-family: $font-light;
+}
+
+.upload-module .upload-container a {
+	text-indent: -9999px;
+	display: block;
+}
+
+.upload-module .upload-container .upload-select,
+.upload-module .upload-container .upload-document {
+	margin-left: 10px;
+	clear: both;
+	overflow: hidden;
+}
+
+.upload-module .upload-container .upload-select p {
+	border: 1px solid $border-main;
+	padding: 16px 22px;
+	float: left;
+	font-family: $font-light;
+}
+
+.upload-module .upload-container .upload-select a {
+	border: 1px solid $border-main;
+	border-left: none;
+	background: $bg-button;
+	float: left;
+	width: 62px;
+	height: 62px;
+}
+
+.upload-module .upload-container .upload-document {
+	margin-top: 10px;
+	border: 1px solid $border-main;
+	width: 100%;
+	max-height: 438px;
+}
+
+.upload-module .upload-container .upload-document p {
+	padding: 21px 10px;
+	float: left;
+}
+
+.upload-module .progress-bar {
+	height: 4px;
+	width: 70%;
+	max-width: 310px;
+	background: #000;
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.upload-module .progress-bar span {
+	width: 20%;
+	height: 2px;
+	display: block;
+	background: $bg-button;
+	margin: 1px;
+}

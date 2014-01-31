@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <title>{% block title %}Empty{% endblock %}</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <!-- Styles -->
+        {{ "100-styles.min.css" | asset_url | stylesheet_tag }}
+
+        <!-- Style block allowing child pages to inject their own styles -->
+        {% block styles %}{% endblock %}
+    </head>
+    <body>
+        <div id="wrapper">
+            test
+            <!-- Include -->
+            {% include "header" %}
+            <!-- Content block, child page inject content -->
+            {% block headline %}
+                <p>[Add headline modules here]</p>
+            {% endblock %}
+
+            {% block mainText %}
+                <p>[Add content modules here]</p>
+            {% endblock %}
+
+            {% include "footer" %}
+        </div>
+
+        {{ "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" | asset_url | script_tag }}
+        {{ "SiteElements/js/plugins.min.js" | asset_url | script_tag }}
+        {{ "SiteElements/js/scripts.min.js" | asset_url | script_tag }}
+
+        <!-- Script block allowing child pages to inject their own scripts -->
+        {% block scripts %}{% endblock %}
+
+    </body>
+</html>

@@ -1,0 +1,26 @@
+
+/* $Custom-Fonts
+================================================== */
+
+
+@font-face {
+    font-family: 'aktiv_grotesklight';
+    src: url('#{$assetspath}/fonts/aktivgroteskstdlt.eot');
+    src: url('#{$assetspath}/fonts/aktivgroteskstdlt.eot?#iefix') format('embedded-opentype'),
+         url('#{$assetspath}/fonts/aktivgroteskstdlt.woff') format('woff'),
+         url('#{$assetspath}/fonts/aktivgroteskstdlt.ttf') format('truetype'),
+         url('#{$assetspath}/fonts/aktivgroteskstdlt.svg#aktiv_grotesklight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aktiv_groteskbold';
+    src: url('#{$assetspath}/fonts/aktivgroteskstdbd.eot');
+    src: url('#{$assetspath}/fonts/aktivgroteskstdbd.eot?#iefix') format('embedded-opentype'),
+         url('#{$assetspath}/fonts/aktivgroteskstdbd.woff') format('woff'),
+         url('#{$assetspath}/fonts/aktivgroteskstdbd.ttf') format('truetype'),
+         url('#{$assetspath}/fonts/aktivgroteskstdbd.svg#aktiv_groteskbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

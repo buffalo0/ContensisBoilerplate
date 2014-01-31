@@ -1,0 +1,31 @@
+
+/* $Links-Module
+================================================== */
+
+.link-box-container {
+	background: #fff;
+	padding: 15px 0 20px;
+	margin-left: 1px;
+	height:100%;
+}
+
+.link-box:first-child .link-box-container {
+	margin-left: 0;
+}
+
+.link-box-content {
+	min-height: 180px;
+}
+
+.link-box h3,
+.link-box p {
+	margin: 0 20px;
+}
+
+.link-box h3 {
+	font-family: $font-light;
+}
+
+.link-box p {
+	padding: 15px 0 20px;
+}

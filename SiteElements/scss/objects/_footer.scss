@@ -1,0 +1,71 @@
+
+/* $Footer
+================================================== */
+
+.footer-links a {
+	display: block;
+	background: $bg-tab;
+	margin-left: 1px;
+	padding: 20px;
+}
+
+.footer-links li:first-child a {
+	margin-left: 0;
+}
+
+.footer .bottom {
+	background: #fff;
+	margin-top: 1px;
+}
+
+.footer .bottom .copyright {
+	padding: 31px 0;
+	color: $color-light;
+}
+
+.footer .bottom .copyright p {
+	padding-left: 20px;
+	margin: 0;
+}
+
+.footer .bottom .social {
+	padding: 15px;
+}
+
+.lt-ie8 .footer .bottom .social li {
+	float: left;
+}
+
+.footer .bottom .social a {
+	float: left;
+	text-indent: -9999px;
+	margin-right: 5px;
+}
+
+.footer .bottom .gov {
+	float: right;
+	margin: 33px 20px 0;
+}
+
+.footer .back-top,
+.footer .mobile-footer > a,
+.footer .nav-title {
+	font-family: $font-light;
+	font-size: 20 + px;
+	padding: 17px 70px 17px 20px;
+	margin-bottom: 1px;
+	display: none;
+	background: $bg-tab;
+}
+
+.mobile-footer {
+	position: relative;
+}
+
+.mobile-footer .icon-expand {
+	float: right;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -27px;
+}

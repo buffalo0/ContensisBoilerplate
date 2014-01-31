@@ -1,0 +1,27 @@
+/* $Tables
+================================================== */
+
+/* Remove most spacing between table cells */
+.panel-module table {
+	border-collapse: collapse;
+	width: 100%;
+	border-spacing: 0;
+	margin: 15px 0 5px;
+}
+
+.panel-module th,
+.panel-module td {
+	padding: 0.25rem;
+	text-align: left;
+	border: 1px solid #ccc;
+	font-weight: normal;
+	padding: 17px 20px;
+}
+
+.panel-module th {
+	background: $bg-title;
+}
+
+.panel-module tbody tr:nth-child(even) {
+	background: #eee;
+}
